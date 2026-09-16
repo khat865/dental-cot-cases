@@ -1,0 +1,1291 @@
+{
+  "version": "dental-cot-47-v2-diagnostic-time",
+  "builtAt": "2026-09-16T02:56:22.962500+00:00",
+  "caseCount": 47,
+  "primaryImageReferences": 95,
+  "englishVariantCount": 3,
+  "englishImageReferences": 9,
+  "uniqueAssetCount": 96,
+  "textOnlyIds": [
+    "PMC6738723",
+    "PMC11297549"
+  ],
+  "sourceFiles": [
+    {
+      "role": "original_samples",
+      "name": "full_47_ms_swift.jsonl",
+      "sha256": "ac93b8d368fdcfc512ed97d103f3a498a4627c2fc03b1d38cd1db5592d0b0202"
+    },
+    {
+      "role": "image_manifest",
+      "name": "dataset_manifest.jsonl",
+      "sha256": "25a321f177d70120e347cf6141e1e8d5acac518c7653a16b9faa643b21153496"
+    },
+    {
+      "role": "structured_records",
+      "name": "selected_47_diagnostic_time.jsonl",
+      "sha256": "ea68acc4d9d55b881de9076e92b40f35ef4dd365620f3898e1493273f3ff9e42"
+    },
+    {
+      "role": "earlier_english_samples",
+      "name": "selected_cot_results.jsonl",
+      "sha256": "9b0fbb1ca124eec63e01b89f396d51f079c63f2d1c44ddd49cefe8e18f3af767"
+    }
+  ],
+  "dataFile": {
+    "name": "data.js",
+    "sha256": "d64f82c77b4f92c45cbcd222cf3c09587ed2ea6475d4ce4420a9cd6d04ff3099"
+  },
+  "transformation": "Only whitelisted fields were packaged. Original questions, responses, section contents, and image bytes were preserved; no CoT was generated or translated.",
+  "assets": [
+    {
+      "src": "assets/PMC10642913/cureus-0015-00000047030-i01.jpg",
+      "sha256": "9126e9e9845455a3230b75fcb63dd2dfab8651f372b6446ffa129cbeb212e6cc",
+      "bytes": 117138,
+      "width": 750,
+      "height": 663
+    },
+    {
+      "src": "assets/PMC10642913/cureus-0015-00000047030-i03.jpg",
+      "sha256": "41840887ee30ae7c494622afbe2632ca95681039dd64010fe94ab728f042ccdf",
+      "bytes": 73416,
+      "width": 750,
+      "height": 423
+    },
+    {
+      "src": "assets/PMC11178394/CRID2024-6590778.001.jpg",
+      "sha256": "a21f327ebe215d75be0a7e5f5a84afbe90d2f1567eab36616fc6a49027dd12dc",
+      "bytes": 42163,
+      "width": 355,
+      "height": 170
+    },
+    {
+      "src": "assets/PMC11178394/CRID2024-6590778.002.jpg",
+      "sha256": "a13614bb19b2e5638c987c4638478036c8da8320d362707706e1c2192a8874de",
+      "bytes": 42580,
+      "width": 355,
+      "height": 171
+    },
+    {
+      "src": "assets/PMC11864335/JISP-28-484-g002.jpg",
+      "sha256": "01a93618ad14f53cdf61730a9de3a402dac7f1bc6855ef8912e9ec8ba97f0143",
+      "bytes": 58130,
+      "width": 493,
+      "height": 367
+    },
+    {
+      "src": "assets/PMC11864335/JISP-28-484-g003.jpg",
+      "sha256": "63282c7002173b15f5a4a8c6f25ebb145b8cae0020245d43e704aa942357de1b",
+      "bytes": 13585,
+      "width": 298,
+      "height": 366
+    },
+    {
+      "src": "assets/PMC11864335/JISP-28-484-g004.jpg",
+      "sha256": "5419038020858ca3da666023d50f6b5d094bbc00ed689af100ed95a0224f2d60",
+      "bytes": 23587,
+      "width": 350,
+      "height": 367
+    },
+    {
+      "src": "assets/PMC11880773/MGG3-13-e70087-g004.jpg",
+      "sha256": "da37e0852d77f80dbc16cb801976753b19dbc88aae7d265492a6d5ef46a2905b",
+      "bytes": 94254,
+      "width": 709,
+      "height": 584
+    },
+    {
+      "src": "assets/PMC11909402/JDS-26-88-g002.jpg",
+      "sha256": "0bfe32176df57ebd812d438212f046a53e1eb7a1b7ea4054030ccb4301c0eaeb",
+      "bytes": 67154,
+      "width": 712,
+      "height": 300
+    },
+    {
+      "src": "assets/PMC11909402/JDS-26-88-g003.jpg",
+      "sha256": "137ae59c4548fd5e51fb286fcde528f9de70b7e116758c378d9f26b26a41072b",
+      "bytes": 204414,
+      "width": 659,
+      "height": 854
+    },
+    {
+      "src": "assets/PMC11929591/cureus-0017-00000079382-i02.jpg",
+      "sha256": "87fffddeab89314bf283240f531d8aa09bd3a016d21b01da8408f36285653b39",
+      "bytes": 55073,
+      "width": 750,
+      "height": 274
+    },
+    {
+      "src": "assets/PMC11929591/cureus-0017-00000079382-i03.jpg",
+      "sha256": "5b2587579015246581b51991a652ef6c630bedb49b6381b15e5f7686cf7d596b",
+      "bytes": 53380,
+      "width": 750,
+      "height": 422
+    },
+    {
+      "src": "assets/PMC11988701/diagnostics-15-00938-g001.jpg",
+      "sha256": "bec08b66ffdd442e24f4eeab331d1e88a3bdfeb60a90a6e05de4630c7bf100e9",
+      "bytes": 59132,
+      "width": 737,
+      "height": 157
+    },
+    {
+      "src": "assets/PMC12011459/CRID2025-5741422.001.jpg",
+      "sha256": "ec8e1e62de5999669ec6ff53011db82678b6250d5a7abf1e1f6e6163d1c184ab",
+      "bytes": 103848,
+      "width": 355,
+      "height": 510
+    },
+    {
+      "src": "assets/PMC12011459/CRID2025-5741422.002.jpg",
+      "sha256": "b776edffad793cb6d303ec5fb41db75222297cb4bb741c9623c97736abb1ce3a",
+      "bytes": 90050,
+      "width": 515,
+      "height": 251
+    },
+    {
+      "src": "assets/PMC12011459/CRID2025-5741422.003.jpg",
+      "sha256": "ba5e13b85468f927d2d4057e487ba87335ac9f390c29e1d52a2d98e636bfa4bd",
+      "bytes": 112073,
+      "width": 709,
+      "height": 419
+    },
+    {
+      "src": "assets/PMC12032624/cureus-0017-00000081272-i01.jpg",
+      "sha256": "3aac27e89cff743774ccc38e60aed7294a787990277bb92f21e8c6ce1080710f",
+      "bytes": 57404,
+      "width": 750,
+      "height": 320
+    },
+    {
+      "src": "assets/PMC12032624/cureus-0017-00000081272-i02.jpg",
+      "sha256": "3998ba1ab73e2e39edc7a3cde6a60b6fbb1617f081115a734153ae9a1f700025",
+      "bytes": 62984,
+      "width": 750,
+      "height": 393
+    },
+    {
+      "src": "assets/PMC12225767/jced-17-06-e752-g001.jpg",
+      "sha256": "ad07d7192a296b2f4dfb4266677c37b3762213e4455bab6ce65eb59070853a43",
+      "bytes": 140143,
+      "width": 732,
+      "height": 445
+    },
+    {
+      "src": "assets/PMC12263011/medi-104-e43260-g001.jpg",
+      "sha256": "e289594ed49473038bff2c5273f55a57a1f50ae7ad85f3c04c9909464d0c1a72",
+      "bytes": 114374,
+      "width": 800,
+      "height": 618
+    },
+    {
+      "src": "assets/PMC12263011/medi-104-e43260-g002.jpg",
+      "sha256": "9281262428e249643872710946c55d61154f16c55a3e585337895c82ed213b86",
+      "bytes": 163164,
+      "width": 800,
+      "height": 450
+    },
+    {
+      "src": "assets/PMC12349912/cureus-0017-00000087924-i01.jpg",
+      "sha256": "5ce76a60bf8fbab255c11c57e1175fb81030088d2cf380223b71aabc0742b3c1",
+      "bytes": 88100,
+      "width": 750,
+      "height": 378
+    },
+    {
+      "src": "assets/PMC12349912/cureus-0017-00000087924-i02.jpg",
+      "sha256": "2db61c3d755c258e32a350eed81d2423b6439525e03f2685fe5977fc27598188",
+      "bytes": 66438,
+      "width": 750,
+      "height": 390
+    },
+    {
+      "src": "assets/PMC12397749/cureus-0017-00000089098-i02.jpg",
+      "sha256": "b13aee956802e327fa096d92b7d023459da4a11dba707de8b4c200507c165cfa",
+      "bytes": 58333,
+      "width": 750,
+      "height": 240
+    },
+    {
+      "src": "assets/PMC12397749/cureus-0017-00000089098-i03.jpg",
+      "sha256": "be8bee57a0e5173585fa17eeb092aabf59fbb5bff7b645aaa0855999810277f3",
+      "bytes": 112752,
+      "width": 750,
+      "height": 654
+    },
+    {
+      "src": "assets/PMC12397749/cureus-0017-00000089098-i04.jpg",
+      "sha256": "0df7f8a19961d26e67d33aa567634403c230684702e70475e17b9e3d38c45545",
+      "bytes": 116136,
+      "width": 750,
+      "height": 843
+    },
+    {
+      "src": "assets/PMC12413892/cureus-0017-00000089557-i01.jpg",
+      "sha256": "50caeec4b40df390327ca5130b8c8d29df9bb1562dc0b370e75e4173846022aa",
+      "bytes": 83139,
+      "width": 750,
+      "height": 318
+    },
+    {
+      "src": "assets/PMC12413892/cureus-0017-00000089557-i02.jpg",
+      "sha256": "d8405d605a4a693966811725c6b10db862a7af281a3cffe0b987bba42fd0ad00",
+      "bytes": 51281,
+      "width": 750,
+      "height": 319
+    },
+    {
+      "src": "assets/PMC12478033/JFOS-43-2-02-f2.jpg",
+      "sha256": "b5e4b1ca2348240cb2b4bff40c1932bf9262a06a3476c5921f083bf7854e1ea3",
+      "bytes": 47627,
+      "width": 674,
+      "height": 254
+    },
+    {
+      "src": "assets/PMC12478033/JFOS-43-2-02-f5.jpg",
+      "sha256": "7889cef9e58e7a9c28789fd28c1c769eda2b635eea8b2db11df14e98b59e1895",
+      "bytes": 88277,
+      "width": 752,
+      "height": 366
+    },
+    {
+      "src": "assets/PMC12554343/cureus-0017-00000093225-i01.jpg",
+      "sha256": "246f57803ddc64a79889d23b9381f0f0fce05b83e6bf93267125429468dd39ba",
+      "bytes": 60545,
+      "width": 750,
+      "height": 279
+    },
+    {
+      "src": "assets/PMC12554343/cureus-0017-00000093225-i07.jpg",
+      "sha256": "71de79876d86fb469f4e5bc7b7ad8b846dec744d2c2282007158018024b671e3",
+      "bytes": 112560,
+      "width": 750,
+      "height": 842
+    },
+    {
+      "src": "assets/PMC12554343/cureus-0017-00000093225-i08.jpg",
+      "sha256": "95e6451f56946ce9ba87cf47be86be00581d48cc99c3ba3b2578602a15f8a2a5",
+      "bytes": 59689,
+      "width": 750,
+      "height": 326
+    },
+    {
+      "src": "assets/PMC12575408/cureus-0017-00000093603-i01.jpg",
+      "sha256": "8ed066b37c411be2d6effeec991c8def7c5ea3f8b2ea02db96522e99329fa164",
+      "bytes": 113112,
+      "width": 750,
+      "height": 494
+    },
+    {
+      "src": "assets/PMC12606825/13256_2025_5613_Fig1_HTML.jpg",
+      "sha256": "00297aea4d9191014338e03fe47830f68ded7e4140cdcc5cfc9796f09561e53e",
+      "bytes": 397664,
+      "width": 707,
+      "height": 773
+    },
+    {
+      "src": "assets/PMC12606825/13256_2025_5613_Fig2_HTML.jpg",
+      "sha256": "da4ccfec1c6d4d90d4d2e52f7e7e9a581937e04c366d434e89620e4dc6a55e38",
+      "bytes": 492011,
+      "width": 896,
+      "height": 768
+    },
+    {
+      "src": "assets/PMC12638139/CRID2025-4904301.001.jpg",
+      "sha256": "03ba52c9149d7039dd75dbf1e5ddf5ffb055009006f23a6016c1858e42efcc98",
+      "bytes": 114251,
+      "width": 570,
+      "height": 405
+    },
+    {
+      "src": "assets/PMC12638139/CRID2025-4904301.002.jpg",
+      "sha256": "c1c849e145d214b7cd47408fdfb1859a2dc9a17fbdd76b5e0d18a21a34bab963",
+      "bytes": 111800,
+      "width": 659,
+      "height": 816
+    },
+    {
+      "src": "assets/PMC12638139/CRID2025-4904301.003.jpg",
+      "sha256": "d123a34eb21e03674e4197cb7aae8fe77a12a33df11867a848eca56c755ac95d",
+      "bytes": 91633,
+      "width": 709,
+      "height": 573
+    },
+    {
+      "src": "assets/PMC12662774/41415_2025_9010_Fig1_HTML.jpg",
+      "sha256": "614ca1cf1bddf95d35a2f9c1a97ab07c5bc11f619fd79804062dcce8baeabcf7",
+      "bytes": 39484,
+      "width": 707,
+      "height": 399
+    },
+    {
+      "src": "assets/PMC12662774/41415_2025_9010_Fig3_HTML.jpg",
+      "sha256": "822c5e0605d3d39ab01f5c749080ef78043c5134cbdfdf959059bac6081cf2e8",
+      "bytes": 29016,
+      "width": 754,
+      "height": 394
+    },
+    {
+      "src": "assets/PMC12662774/41415_2025_9010_Fig4_HTML.jpg",
+      "sha256": "7115241b309d000fd30a5d8dd5d9c0ff1f94f2d1730b7b27a75738356a866566",
+      "bytes": 13308,
+      "width": 716,
+      "height": 163
+    },
+    {
+      "src": "assets/PMC12815613/cureus-0017-00000099735-i01.jpg",
+      "sha256": "d6340b24db242b57f9ba18afc6f2fbcb5f75d6807c8cbbbd3f8fa313a7e63f05",
+      "bytes": 100589,
+      "width": 750,
+      "height": 542
+    },
+    {
+      "src": "assets/PMC12815613/cureus-0017-00000099735-i02.jpg",
+      "sha256": "4373f98b83ea14f3a91fb1591d86eea7ac37236de728315c66c66ebee379ae90",
+      "bytes": 121139,
+      "width": 750,
+      "height": 390
+    },
+    {
+      "src": "assets/PMC12815613/cureus-0017-00000099735-i03.jpg",
+      "sha256": "98a133fb87a444dbc0fb4110fb0cf22107901244970431772657349ac904a3b8",
+      "bytes": 89099,
+      "width": 750,
+      "height": 879
+    },
+    {
+      "src": "assets/PMC12839816/dentistry-14-00027-g001.jpg",
+      "sha256": "73e319fa2e51f899a191ec6a0ac1f7470448efc3a8f6132947c7cd3ef868a443",
+      "bytes": 42760,
+      "width": 725,
+      "height": 272
+    },
+    {
+      "src": "assets/PMC12839816/dentistry-14-00027-g002.jpg",
+      "sha256": "2cf370bfc4b69047905d16fdf580e23efb97e8df1c72795a7b670458ea0dfb01",
+      "bytes": 61700,
+      "width": 797,
+      "height": 294
+    },
+    {
+      "src": "assets/PMC12839816/dentistry-14-00027-g003.jpg",
+      "sha256": "24723d93f65e562b9b040bdd955c67ede85ee13217246064e551d5ccf0b6d0fc",
+      "bytes": 140306,
+      "width": 788,
+      "height": 927
+    },
+    {
+      "src": "assets/PMC12840320/children-13-00011-g001.jpg",
+      "sha256": "c13a67aabd755a324ee77a2244a4c8cae3907e3f170a6e8ccb39615a9d774d08",
+      "bytes": 121905,
+      "width": 789,
+      "height": 1138
+    },
+    {
+      "src": "assets/PMC12840320/children-13-00011-g017.jpg",
+      "sha256": "0a046f9e4d92f69a9e1282ca8ed01fcf89978a20aabc718ff39753ae8304d49b",
+      "bytes": 102948,
+      "width": 768,
+      "height": 370
+    },
+    {
+      "src": "assets/PMC12939484/dentistry-14-00129-g001.jpg",
+      "sha256": "c19f202f2f198b749eb54de407d08be0e368205a4fe1ef6b659c797a608d6a91",
+      "bytes": 278688,
+      "width": 779,
+      "height": 1427
+    },
+    {
+      "src": "assets/PMC12939484/dentistry-14-00129-g002.jpg",
+      "sha256": "8104eab4fd90709487d418d80e897aac50d5eda1fec36b868357b7a8a33c0be1",
+      "bytes": 64187,
+      "width": 790,
+      "height": 405
+    },
+    {
+      "src": "assets/PMC12939999/dentistry-14-00104-g001.jpg",
+      "sha256": "48aa84650fb7d49a8e7d882739b304f1bf2ded63319b9d09512c5524b2337d25",
+      "bytes": 70580,
+      "width": 667,
+      "height": 515
+    },
+    {
+      "src": "assets/PMC12939999/dentistry-14-00104-g002.jpg",
+      "sha256": "f69d29523f27bdf9fe3fe2d29a4cba67ec1ef306c041bb5a144841bbceb68bf2",
+      "bytes": 64419,
+      "width": 730,
+      "height": 235
+    },
+    {
+      "src": "assets/PMC12939999/dentistry-14-00104-g005.jpg",
+      "sha256": "b3de400cb9cfd60cf9309a8526e8f533cec408d177610c380e4a80e75cf67d72",
+      "bytes": 50975,
+      "width": 746,
+      "height": 397
+    },
+    {
+      "src": "assets/PMC12964317/cureus-0018-00000102941-i01.jpg",
+      "sha256": "42913cc1180a70d78174f9eef9e20ea883c1193c4188dba321c5aba39b1bb033",
+      "bytes": 71030,
+      "width": 750,
+      "height": 433
+    },
+    {
+      "src": "assets/PMC12964317/cureus-0018-00000102941-i02.jpg",
+      "sha256": "e0546945213d7f6f8a9884edc930d43efb7e265742b879f1e1d94087203b4225",
+      "bytes": 92544,
+      "width": 750,
+      "height": 363
+    },
+    {
+      "src": "assets/PMC12964317/cureus-0018-00000102941-i03.jpg",
+      "sha256": "2c08c1c82ef87b7bc9d96fea868bcb8dde07aa7244fc6dc6cc141d58d7316228",
+      "bytes": 52583,
+      "width": 750,
+      "height": 181
+    },
+    {
+      "src": "assets/PMC13022747/SCD-46-0-g004.jpg",
+      "sha256": "e7ef51e9b4bc8775534071d4aaa7a05ad74c47f0c4d606c62d4cc5d4b948235a",
+      "bytes": 183428,
+      "width": 600,
+      "height": 868
+    },
+    {
+      "src": "assets/PMC13124219/1678-7757-jaos-34-e20250499-gf02.jpg",
+      "sha256": "b92e2251e2586ba5a2c19c69142f289faaacc4630c4f4fa4ca08535f448d7e78",
+      "bytes": 63716,
+      "width": 600,
+      "height": 331
+    },
+    {
+      "src": "assets/PMC13178942/cureus-0018-00000107107-i01.jpg",
+      "sha256": "c545b5c973802cccd68db71fa890103df3a6792babf8e51b95bfbb83b8f46a64",
+      "bytes": 81558,
+      "width": 750,
+      "height": 361
+    },
+    {
+      "src": "assets/PMC13179519/cureus-0018-00000107134-i01.jpg",
+      "sha256": "e24b4b88e3814a779b086cb6ee9af504922e04e9ff172c1351ac80ad3490f9d1",
+      "bytes": 65334,
+      "width": 750,
+      "height": 250
+    },
+    {
+      "src": "assets/PMC13242668/12903_2026_8711_Fig1_HTML.jpg",
+      "sha256": "364883db87b6b4a1e2401096b2d486984c8d8d0ea7155f5444688079ab0aa419",
+      "bytes": 43795,
+      "width": 969,
+      "height": 330
+    },
+    {
+      "src": "assets/PMC13242668/12903_2026_8711_Fig2_HTML.jpg",
+      "sha256": "f1ae01c31da0ddf02f108f076a47021e4ec9b747935bbffd300adf645962eaf0",
+      "bytes": 118989,
+      "width": 646,
+      "height": 471
+    },
+    {
+      "src": "assets/PMC13242668/12903_2026_8711_Fig3_HTML.jpg",
+      "sha256": "b010ba9b050b897f40c4b363d65b4a6e988c7d31f7396235d58bb96c74b611cd",
+      "bytes": 168047,
+      "width": 646,
+      "height": 814
+    },
+    {
+      "src": "assets/PMC13262183/cureus-0018-00000108780-i01.jpg",
+      "sha256": "65e692a621c3fa8eebc095f5226de423de1ae352408213e728151cb85162790f",
+      "bytes": 34381,
+      "width": 750,
+      "height": 366
+    },
+    {
+      "src": "assets/PMC13262183/cureus-0018-00000108780-i02.jpg",
+      "sha256": "dcaeae32074e455a0fa1bf4a7b2f035539d5761f6329cc8eea501ec081c851e3",
+      "bytes": 188620,
+      "width": 750,
+      "height": 753
+    },
+    {
+      "src": "assets/PMC4319327/CCD-6-110-g001.jpg",
+      "sha256": "9d31a59c13177f0a1f7fc77b8044286c826f0add4166e7a021460e745fc8fa09",
+      "bytes": 22968,
+      "width": 539,
+      "height": 225
+    },
+    {
+      "src": "assets/PMC4319327/CCD-6-110-g002.jpg",
+      "sha256": "2247c90496351a9287f44476c241525cb81bcac86fc909d608cf84342850a965",
+      "bytes": 37741,
+      "width": 539,
+      "height": 362
+    },
+    {
+      "src": "assets/PMC4319327/CCD-6-110-g003.jpg",
+      "sha256": "ca30a12d090d1804328703f71a5ebfb5c90aa913a94bab85b205537f06f7058d",
+      "bytes": 22561,
+      "width": 539,
+      "height": 231
+    },
+    {
+      "src": "assets/PMC5012755/PAMJ-24-106-g001.jpg",
+      "sha256": "6c36c5f564f9b5e30b2a41694683099e112242937541eda4e384dbc21a166851",
+      "bytes": 41366,
+      "width": 616,
+      "height": 447
+    },
+    {
+      "src": "assets/PMC5012755/PAMJ-24-106-g002.jpg",
+      "sha256": "82e2c40472099fc009025c11db836536d9fb70192da502886639bbb92bd9e777",
+      "bytes": 42314,
+      "width": 552,
+      "height": 309
+    },
+    {
+      "src": "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf1.jpg",
+      "sha256": "24027ddabb358f177afdd2d50566fb24c9cc07d853dd9f0ffd6693853d02de7a",
+      "bytes": 122459,
+      "width": 568,
+      "height": 710
+    },
+    {
+      "src": "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf2.jpg",
+      "sha256": "0fd53ac86a192677693b5bec0761cf7113c4e63496eda08a88a5e241835baab8",
+      "bytes": 55269,
+      "width": 557,
+      "height": 250
+    },
+    {
+      "src": "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf3.jpg",
+      "sha256": "29cfbb6632ee7e77e6139e620de9563b90dd1e6a1e434b49a8233c13ef849caf",
+      "bytes": 62293,
+      "width": 557,
+      "height": 323
+    },
+    {
+      "src": "assets/PMC6969963/jced-12-e93-g001.jpg",
+      "sha256": "3ac1a644a7c394c0602092337dac203d3349093ac6ad3fa1a20448276a93694e",
+      "bytes": 146220,
+      "width": 726,
+      "height": 649
+    },
+    {
+      "src": "assets/PMC7714592/CRID2020-8829305.001.jpg",
+      "sha256": "987a2e4b0e920f177bb933d43bab700f749dde966ec62e9ef487713876c86328",
+      "bytes": 90196,
+      "width": 697,
+      "height": 504
+    },
+    {
+      "src": "assets/PMC7714592/CRID2020-8829305.002.jpg",
+      "sha256": "b8808ff221b55933add51c6fc1bdc5b01da877292e8b2d066961620d718ccc72",
+      "bytes": 83929,
+      "width": 602,
+      "height": 434
+    },
+    {
+      "src": "assets/PMC8003149/ijerph-18-03159-g001.jpg",
+      "sha256": "00e74b8ba0598c0a405d6f4042173133544c90002729d0baa4034263eed86549",
+      "bytes": 58286,
+      "width": 771,
+      "height": 475
+    },
+    {
+      "src": "assets/PMC8003149/ijerph-18-03159-g002.jpg",
+      "sha256": "b463e597d24dc53a4bd8a9fa9b4a18c44d91e330587f92d113cb91f5cf6a0e65",
+      "bytes": 78293,
+      "width": 780,
+      "height": 481
+    },
+    {
+      "src": "assets/PMC8003149/ijerph-18-03159-g004.jpg",
+      "sha256": "b25c4ae3f2ba5f6ea2e74114bca29b18348d1e79c57a564468755908f1267cb6",
+      "bytes": 79984,
+      "width": 744,
+      "height": 328
+    },
+    {
+      "src": "assets/PMC8891407/40729_2022_409_Fig1_HTML.jpg",
+      "sha256": "104565717361cf922d7ac7f6493fb47b26be9a6849e48fe70c845ba5c5723ca4",
+      "bytes": 85973,
+      "width": 708,
+      "height": 263
+    },
+    {
+      "src": "assets/PMC8891407/40729_2022_409_Fig2_HTML.jpg",
+      "sha256": "6217225bcc0cd91eb4891508d3aa2efb8740517246b0e133ebf5f7dfd4baa305",
+      "bytes": 58044,
+      "width": 598,
+      "height": 335
+    },
+    {
+      "src": "assets/PMC8891407/40729_2022_409_Fig3_HTML.jpg",
+      "sha256": "8bedf106f34d755f755766a5067e67686a1293e697ef55abb618945441d22beb",
+      "bytes": 57150,
+      "width": 708,
+      "height": 321
+    },
+    {
+      "src": "assets/PMC8983254/CRID2022-3548370.001.jpg",
+      "sha256": "91b6c4e3a6df52e906e62fd4225096f0246e07a8768f9f2c852ffa64101a877e",
+      "bytes": 259801,
+      "width": 744,
+      "height": 1372
+    },
+    {
+      "src": "assets/PMC8983254/CRID2022-3548370.002.jpg",
+      "sha256": "596106ced1ea2662b6bb9514911ab690e343cc62ddc73d27bdcfc00f82f814e5",
+      "bytes": 98513,
+      "width": 474,
+      "height": 218
+    },
+    {
+      "src": "assets/PMC8983254/CRID2022-3548370.003.jpg",
+      "sha256": "a6ecb4f7722ed9055cdc01253b924109ee84a0a9f9ad02ce1da661d3014bb71f",
+      "bytes": 87644,
+      "width": 602,
+      "height": 296
+    },
+    {
+      "src": "assets/PMC9126466/JMedLife-15-579-g001.jpg",
+      "sha256": "3861a8f74ae6259f5381ab6a4c619b189a27f0ed2995387748572241b265fb11",
+      "bytes": 114771,
+      "width": 709,
+      "height": 407
+    },
+    {
+      "src": "assets/PMC9126466/JMedLife-15-579-g004.jpg",
+      "sha256": "8fa071c98d773dbb3509cb605c810247430a4506c32ff6e73b431fa598754e33",
+      "bytes": 67967,
+      "width": 669,
+      "height": 343
+    },
+    {
+      "src": "assets/PMC9241206/12903_2022_2294_Fig3_HTML.jpg",
+      "sha256": "bb578f9a2c69e58fa8f6b2464f0ca2e9527a88a57bf01d80bc4b16ecd65ddcca",
+      "bytes": 243321,
+      "width": 896,
+      "height": 814
+    },
+    {
+      "src": "assets/PMC9287005/CRID2022-1976352.001.jpg",
+      "sha256": "c3d68c1a52bafbcf78997c7380dadf525044bb09e474c2e7a70fd066569b668a",
+      "bytes": 216688,
+      "width": 789,
+      "height": 685
+    },
+    {
+      "src": "assets/PMC9287005/CRID2022-1976352.002.jpg",
+      "sha256": "60c6bc6efb27b2766a30eb332846d5651936c19458300046c5aab9f3a2f41645",
+      "bytes": 60923,
+      "width": 643,
+      "height": 164
+    },
+    {
+      "src": "assets/PMC9287005/CRID2022-1976352.003.jpg",
+      "sha256": "b1d0b9605d9c24c0bbdde00478dff58dc7a6a9415e2f2dc57b8b6592b261e4ea",
+      "bytes": 36354,
+      "width": 384,
+      "height": 217
+    },
+    {
+      "src": "assets/PMC9469393/JPBS-14-1046-g001.jpg",
+      "sha256": "f65890006d5154cd5ee04ee7729d180982864790b8c9341693e0bb22bcb5bce4",
+      "bytes": 63259,
+      "width": 539,
+      "height": 394
+    },
+    {
+      "src": "assets/PMC9756689/13256_2022_3703_Fig1_HTML.jpg",
+      "sha256": "c8b0e912b982170855a51426670a9cb4ff27ccfd6a781443d80894d7cb3d3444",
+      "bytes": 248662,
+      "width": 896,
+      "height": 1025
+    },
+    {
+      "src": "assets/PMC9756689/13256_2022_3703_Fig3_HTML.jpg",
+      "sha256": "f6012db43680620d3fa977f7063c5b9b662c4081e9c71f84c24ad54ba88bb790",
+      "bytes": 242123,
+      "width": 1959,
+      "height": 625
+    }
+  ],
+  "cases": [
+    {
+      "id": "PMC13242668",
+      "question_sha256": "6445a2c5e12d1869303474efc6d50eae50f202f339b29806ffdc1dfae6564338",
+      "response_sha256": "c40189a69ea65333cc4d472159bd3d8cccbcd4732b12c5bf0df7cc9b1a9f1bb2",
+      "images": [
+        "assets/PMC13242668/12903_2026_8711_Fig2_HTML.jpg",
+        "assets/PMC13242668/12903_2026_8711_Fig1_HTML.jpg",
+        "assets/PMC13242668/12903_2026_8711_Fig3_HTML.jpg"
+      ],
+      "english_images": [
+        "assets/PMC13242668/12903_2026_8711_Fig2_HTML.jpg",
+        "assets/PMC13242668/12903_2026_8711_Fig1_HTML.jpg",
+        "assets/PMC13242668/12903_2026_8711_Fig3_HTML.jpg"
+      ],
+      "article_metadata_sha256": "91bb5e04f5e2f74530dfef0ee27b2045b50b25bd5e672518e52afe8369b4bc19",
+      "article_xml_sha256": "06e338f61e1fc0798b18b74d69d142d97a606809db322f1f1bd728dc8501da28"
+    },
+    {
+      "id": "PMC12839816",
+      "question_sha256": "4a768d85aa7bc4739bae7ccb41ccde081184afd725646f0c9da51721e7518d1d",
+      "response_sha256": "0eee8eefd3991c15a906ebdb6e881b40a4c8ab536f64c4a3d3d3ed32a68d5e1c",
+      "images": [
+        "assets/PMC12839816/dentistry-14-00027-g002.jpg",
+        "assets/PMC12839816/dentistry-14-00027-g001.jpg",
+        "assets/PMC12839816/dentistry-14-00027-g003.jpg"
+      ],
+      "english_images": [
+        "assets/PMC12839816/dentistry-14-00027-g002.jpg",
+        "assets/PMC12839816/dentistry-14-00027-g001.jpg",
+        "assets/PMC12839816/dentistry-14-00027-g003.jpg"
+      ],
+      "article_metadata_sha256": "3814ace93c36e41c591f9872c92db18ca346d1b7abf6bcd1bd602d48202388db",
+      "article_xml_sha256": "d8ca236051162ef1fbba92f79d559b124153a0db2761e1ef9b41c262b5e496aa"
+    },
+    {
+      "id": "PMC12939999",
+      "question_sha256": "22948543456f7939d4da30d17081bd63d0d907139fec347161706f7f21dfda0e",
+      "response_sha256": "53ff6baa1e3a00952276edecd8677f7f87c5e68372c5137c5d9501bba0d1937c",
+      "images": [
+        "assets/PMC12939999/dentistry-14-00104-g002.jpg",
+        "assets/PMC12939999/dentistry-14-00104-g001.jpg"
+      ],
+      "english_images": [
+        "assets/PMC12939999/dentistry-14-00104-g005.jpg",
+        "assets/PMC12939999/dentistry-14-00104-g001.jpg",
+        "assets/PMC12939999/dentistry-14-00104-g002.jpg"
+      ],
+      "article_metadata_sha256": "c2bfd7a01e7469e126119dfdbabb8c2d8ae55f3af1221296e298a0e36a70d275",
+      "article_xml_sha256": "ed302a0c97733fe3ec8e2f60227225b1d382c92ae46ed0029036e1d22488a88d"
+    },
+    {
+      "id": "PMC13178942",
+      "question_sha256": "8a82e8b13c61d4b6b59af0682c1d226a2a9e0cbcbea940a68bbe7c116b0746b4",
+      "response_sha256": "21480ec692f937dd154479ba2ca8bd357f8ae6725cce7d1dd4ddddff04dbe82d",
+      "images": [
+        "assets/PMC13178942/cureus-0018-00000107107-i01.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "aa3689e9ef4a4d8c5171369bdf6fd49bbe05da64799017b45a0cd14072ba4b5c",
+      "article_xml_sha256": "4256ff1077381dbd9e6f423237948f7a77521f13883804aa5ae48fd9da6e6815"
+    },
+    {
+      "id": "PMC13022747",
+      "question_sha256": "0ca6ee752b128ef0159da8c730ee51decbb204a66eab85ddcecfcde8ec6d38aa",
+      "response_sha256": "8876f3a525f1320fcb1dcc1bfa42165e35c50edf34bb96cc49d525c463c96f1c",
+      "images": [
+        "assets/PMC13022747/SCD-46-0-g004.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "c4cc7ecd4679afe9ff53b1996ca943c42ebc3aca297623fa4dbc8ea9a3936f53",
+      "article_xml_sha256": "ae93e172b2df32df74892200909005e58a8c7467adf0eda9c8a72997db8f1aec"
+    },
+    {
+      "id": "PMC12662774",
+      "question_sha256": "d995cf3b3633787b23ba77b36f58960a078e31839e1a3a2106b742b5dcacbab5",
+      "response_sha256": "66eeab2574aab51e6d4ef1bd05d9664676ddbc9a1f35da363e25f6d2e0b82ce8",
+      "images": [
+        "assets/PMC12662774/41415_2025_9010_Fig3_HTML.jpg",
+        "assets/PMC12662774/41415_2025_9010_Fig1_HTML.jpg",
+        "assets/PMC12662774/41415_2025_9010_Fig4_HTML.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "3a36f84ead780251ce050b897c845eb7fc2d1f7470a21de8ddaaf1d955c0fdd2",
+      "article_xml_sha256": "7f83563b06a262de4710b85f1d4f577a3bfa87a17502519f417fcab40a2847d6"
+    },
+    {
+      "id": "PMC11988701",
+      "question_sha256": "2550c679e2a5261d63de8c3544f9ea151ac5c2126fa5f5ec1977d85e2323162f",
+      "response_sha256": "adb0a9b16c51299acc48e7f79f2057e9d69072005620ff24b72cbdd0eb515e40",
+      "images": [
+        "assets/PMC11988701/diagnostics-15-00938-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "7ca94655851497c9a36eaad93dd5c08f6a1477958a1dad6e2f8564c3ede0d955",
+      "article_xml_sha256": "96fba0fa9cef23afb80f2d8d78d1d8f8e53b626de8c1d86df519142194deb7ae"
+    },
+    {
+      "id": "PMC9469393",
+      "question_sha256": "860e3e24ccc6c8f2519267c4a608cd328b991a5ee2a8b18ebc34dbf3c80b4848",
+      "response_sha256": "2bcd7e5634e71adc1c300eb4b6d240430046b4e38ccaedbf1723050a728b26a8",
+      "images": [
+        "assets/PMC9469393/JPBS-14-1046-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "2dd102c9a31e0567fc42e097724210e28a79220fc8ba451cdc020c19fddd84a2",
+      "article_xml_sha256": "8e057af0456f42a98c5519d58823af74f0a2a9e5d855145f3b55d73c4d448543"
+    },
+    {
+      "id": "PMC13262183",
+      "question_sha256": "c1e7f10a9a5a44f44ae79ca08761d28b3bc8917a93ba8ad550236785ff23496f",
+      "response_sha256": "aec081e8e8a190cfd78f131b28138f51932308ae0553bb7721877697f8c05796",
+      "images": [
+        "assets/PMC13262183/cureus-0018-00000108780-i01.jpg",
+        "assets/PMC13262183/cureus-0018-00000108780-i02.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "0c5f5e76932e2650d39feb9830c36915596514a56310cbbb324e37a58ab96f9a",
+      "article_xml_sha256": "d2dc1384b849e8d6dd9be1b779ed6e4522b0380dbf7c6392b522297bd2a22251"
+    },
+    {
+      "id": "PMC13179519",
+      "question_sha256": "a56818fea11f1fbe99d1f09fb58f9aa444ee0f72bfdc1ed2ca935c38bb3f4cab",
+      "response_sha256": "81c8710bc99cf05393e004e5cc65eac6ed2f2241be3ead704b3727bc2cad1475",
+      "images": [
+        "assets/PMC13179519/cureus-0018-00000107134-i01.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "1eedbfab9ecb0ed829e5b8c7817038e33cd77c8623923ed7ca6788b41965dd3c",
+      "article_xml_sha256": "b475ff1bff3cc359ce6560358182b38e178041a5fd1a035476b120fc89ce3438"
+    },
+    {
+      "id": "PMC12964317",
+      "question_sha256": "16f99ec088431c10676a4e2893a8b3e83f4f4730519e7e11527fd1280bcd0117",
+      "response_sha256": "9f5a410f09766e393357a455beb440889a8384b938c9a9116e626d0e0b079772",
+      "images": [
+        "assets/PMC12964317/cureus-0018-00000102941-i02.jpg",
+        "assets/PMC12964317/cureus-0018-00000102941-i01.jpg",
+        "assets/PMC12964317/cureus-0018-00000102941-i03.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "e180dc5601b2c89da2fc007139df8ae22cca571a9512ff3127f6edf766a526bf",
+      "article_xml_sha256": "19922f97703e9604d51c292cd0b2a0ee058bad6dc3bf3077b77f52df6d1bda35"
+    },
+    {
+      "id": "PMC11929591",
+      "question_sha256": "66e9c24ea7ad68a88c6eac151db3c7a2540dc788c865c56940c869951dbd271e",
+      "response_sha256": "fb5736b7baeebdb56cadbd8f801443497dcd03e7b978a09b2ed29002bf4f927a",
+      "images": [
+        "assets/PMC11929591/cureus-0017-00000079382-i02.jpg",
+        "assets/PMC11929591/cureus-0017-00000079382-i03.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "7596635874a357736ba154867502f84a1b008cbf24ab3b29e64ba72f24e66b98",
+      "article_xml_sha256": "3eb90b4bf9d91f5a18e5352395adb67ffe72b7304b79bec0936fbce2929b28e1"
+    },
+    {
+      "id": "PMC12032624",
+      "question_sha256": "78ff5c1ada597703cc75b1b031487bceccb6bae29e9c0e68567d1c4a1f107296",
+      "response_sha256": "fc7a786c8f5e16ef445ac34bd3e0dbf087d832612e7f3633feefa93f448c726f",
+      "images": [
+        "assets/PMC12032624/cureus-0017-00000081272-i02.jpg",
+        "assets/PMC12032624/cureus-0017-00000081272-i01.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "ab33d5d608bb7585c0e676f77f098f9b10f10e642e047e169b01dfd7264b56db",
+      "article_xml_sha256": "0ef0d6caadf99b8f8545318967bd32b46640cecc7534dde90401cb04c41064e8"
+    },
+    {
+      "id": "PMC9756689",
+      "question_sha256": "72faf383c98eb56a1793ba22874586ffd7b81c8ae95f50e9da1ecf757c477fda",
+      "response_sha256": "ce39e51be555b6298126153aaff915cbd479e4cd87be2d6a145d49d4cd8065e2",
+      "images": [
+        "assets/PMC9756689/13256_2022_3703_Fig1_HTML.jpg",
+        "assets/PMC9756689/13256_2022_3703_Fig3_HTML.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "5c05f16d1c84717187ca810e5cffd8a22c7542f959eee204e2d2dc10a336735c",
+      "article_xml_sha256": "1970e25c3dbe235a8702412da344d2e3586fb5a7c380df3bf27d5404aa04e090"
+    },
+    {
+      "id": "PMC9287005",
+      "question_sha256": "9cd7f4ccffc5b72d7141ffafc1d26a11c93789e164212a1e8ae5a7e684fa9045",
+      "response_sha256": "b9b7e596f1e182852bf831e9163e8a6f65e22ec89cb965974c7103539235ee3c",
+      "images": [
+        "assets/PMC9287005/CRID2022-1976352.002.jpg",
+        "assets/PMC9287005/CRID2022-1976352.001.jpg",
+        "assets/PMC9287005/CRID2022-1976352.003.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "beab9cec1b00eccc8ab0eea98d5a514988bfb81fbd07cb3ce414701bb62be521",
+      "article_xml_sha256": "a32f76e7cfaf543b6f447d9e62d0b22b7ae2b61ebca12a3ccfeab3e5340bf019"
+    },
+    {
+      "id": "PMC12554343",
+      "question_sha256": "85e6542822facd10f081b64cd92595eb510679af168d95b1087fb2083162a553",
+      "response_sha256": "4d3c50eb17d29ca2c707caae579397794242f85b45d8b536d9ef58083c6e1bcf",
+      "images": [
+        "assets/PMC12554343/cureus-0017-00000093225-i07.jpg",
+        "assets/PMC12554343/cureus-0017-00000093225-i01.jpg",
+        "assets/PMC12554343/cureus-0017-00000093225-i08.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "57c3919f22e8389d3adc146536309ad94e3b7c906e5f259d3619eaa13e43f636",
+      "article_xml_sha256": "078d5bacac8d696f88b68a16c6a48410996e62d2e2816de97f7aa3b4e757fcab"
+    },
+    {
+      "id": "PMC5012755",
+      "question_sha256": "c8aea0576978f49f90dea2f01e618602724994f9a263f25e2ffedba9aee66672",
+      "response_sha256": "029aedb1a80483fc2f1def4e0b497a72b399cb602e44ec3c1dd414b905fb28ab",
+      "images": [
+        "assets/PMC5012755/PAMJ-24-106-g002.jpg",
+        "assets/PMC5012755/PAMJ-24-106-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "e6c4a507885fdf242f4d1beb63ca927d4e80fd667703b3912f2a4fc5b6421e36",
+      "article_xml_sha256": "a41e4945a95312570df0c6553ed1ddf097673c8617d05f21f28f6ac68a11862f"
+    },
+    {
+      "id": "PMC11880773",
+      "question_sha256": "08a08dfe8dfe9cd5d8cfa076f95d9a3a5c8bfda931a9a740acee78fe52e5d827",
+      "response_sha256": "9f90f83dfaf3c7d32c5f85ab18178e99c4ea5b8d767f5216dba93a05e4c8b29a",
+      "images": [
+        "assets/PMC11880773/MGG3-13-e70087-g004.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "58d286e807897b2f0fa8b0f09891261997ec0f0dc97e2cdbfffd8c8180ef2192",
+      "article_xml_sha256": "1d453a7fb10b9d2690e13daa75aa164c7e45b1b3c842e5c241f64973564706cb"
+    },
+    {
+      "id": "PMC11909402",
+      "question_sha256": "eaa2c72107227da906eead28fac56a9b4e8777c47f98c19ac65338875e1ecae5",
+      "response_sha256": "645580de12f7bbc8db20aa230d023d7c5230effa83a91fe17129e61cd04bf54c",
+      "images": [
+        "assets/PMC11909402/JDS-26-88-g002.jpg",
+        "assets/PMC11909402/JDS-26-88-g003.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "b38179d03dfb4463e716e00cc4c8ec08d2c2aa8f04e2e9991957731f2202bd1b",
+      "article_xml_sha256": "85c2c11725c643880dc8a23bf4a692727ef63847e21390597add0a42bbcb1059"
+    },
+    {
+      "id": "PMC12939484",
+      "question_sha256": "b9bb506900c35bf6e4dc58b429ddb46e309e44372d071510d12af51952eb186f",
+      "response_sha256": "876eb0aef5f32836367465cb6daedc7a1f4af375a97517c3cf89471b774de701",
+      "images": [
+        "assets/PMC12939484/dentistry-14-00129-g001.jpg",
+        "assets/PMC12939484/dentistry-14-00129-g002.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "1c832c90c0e081bd9b917f59e7c58f3f9689db4f4c699a9d7150c9041c0c5ea8",
+      "article_xml_sha256": "31c0c53ed18c6592498a539904061040d8f21b2a489331253dfefbbee7fdeb7a"
+    },
+    {
+      "id": "PMC12397749",
+      "question_sha256": "5dfeb1968c112ccb9f9f97ad1f9f9efadaf5533d23e0feb775b690cb0f74a6e1",
+      "response_sha256": "a076ed1448ca6d681d4f352938de282480a7e2952d7e157d8e135ba9465f9aac",
+      "images": [
+        "assets/PMC12397749/cureus-0017-00000089098-i03.jpg",
+        "assets/PMC12397749/cureus-0017-00000089098-i02.jpg",
+        "assets/PMC12397749/cureus-0017-00000089098-i04.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "7240b3ec1d172820eb570da526390e77048a2807ffb5008ee1630ed469b9f365",
+      "article_xml_sha256": "3dc03cca4f69bd7e7d0b78cd73f48f10b79e8ba86ffe9b370862772a5efe219c"
+    },
+    {
+      "id": "PMC12263011",
+      "question_sha256": "119f996693135c9e8c55e8c3343c20e554fc41b6aa93fba01f12f362ac02ba81",
+      "response_sha256": "9f3efcf2e2158d4ed5a3c4c7f627d0317cdb8a1eab418d081bc2d582f4166fb1",
+      "images": [
+        "assets/PMC12263011/medi-104-e43260-g001.jpg",
+        "assets/PMC12263011/medi-104-e43260-g002.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "0369ff217c73b4a40090af8a21b82fda436fc90c1576e50e072a3fc55a5fb903",
+      "article_xml_sha256": "2eabf75a5251dc64bebce8bf52c246f1a2e3815086ce82e27c283679d782d94f"
+    },
+    {
+      "id": "PMC7714592",
+      "question_sha256": "512260be6de858c05603472e7665f3387839dcf2fd2e64aed2a5431824433a82",
+      "response_sha256": "26118a30b1bb3b2d960c3e660ae4883828a210d9179078f9655aba7aac24b47f",
+      "images": [
+        "assets/PMC7714592/CRID2020-8829305.001.jpg",
+        "assets/PMC7714592/CRID2020-8829305.002.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "f764ec7e0241ab8e1dc3f9c5c88abc7d30b21d6e193cca38bbf826852fca6d94",
+      "article_xml_sha256": "649704c9f9bbea60d80ac187af1b53dc504b71fe9970ee80d9756adde549f136"
+    },
+    {
+      "id": "PMC12575408",
+      "question_sha256": "644ae4147bdb41dab069717b268bcb6040c18473f991b5e3c200dcbff0f986e7",
+      "response_sha256": "30ec7447a0e4c84c2825640b3fbbabcd2ab829c0fe25a3e189b8f03b7112942f",
+      "images": [
+        "assets/PMC12575408/cureus-0017-00000093603-i01.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "f8b7d80c55be9c02a92117c1b821c7e81ae29057c78a3f1defe30256fbae7309",
+      "article_xml_sha256": "cfcd0b8b1560b8daff3f1af85d4d8f9eafdfe60b5a260d1f1193ad0e4cc64974"
+    },
+    {
+      "id": "PMC4319327",
+      "question_sha256": "e36372308d53827124e0100d05527c10a981f82edef3396e47b931d09ec390b5",
+      "response_sha256": "e04081f2298bacea436e1b9ef55da2db381894297ebd937c4af838febdfb19e5",
+      "images": [
+        "assets/PMC4319327/CCD-6-110-g003.jpg",
+        "assets/PMC4319327/CCD-6-110-g002.jpg",
+        "assets/PMC4319327/CCD-6-110-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "fd92263da1bf87f17da6f954aae19af5096db23079cb4259f218b086f5b0dfbd",
+      "article_xml_sha256": "8d2b9a771d0bbf2b2a0bcc93f125a755087b7f9236b969182ba3bea6b57ad800"
+    },
+    {
+      "id": "PMC13124219",
+      "question_sha256": "43238fe3832ce5e006459e4df5f32db8fd26212c512d6c670fb6e88140ba35ad",
+      "response_sha256": "4c89b0ce0dcc9ebaea26e5b99670db5cdf00f5d62d6362950a65835de34bb062",
+      "images": [
+        "assets/PMC13124219/1678-7757-jaos-34-e20250499-gf02.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "28174291df5154e312980766b86c4564cf6ac5217170037c7b9d4c8619f49525",
+      "article_xml_sha256": "a91d8a866b5a51e17821e947686c6da3c4233c81d0a3f1d017c73bc3ec0370b9"
+    },
+    {
+      "id": "PMC12413892",
+      "question_sha256": "2a358c31f35a51408f351b4e340a837cb047efb7de404d82745587bc920eb072",
+      "response_sha256": "b3531c8e22013d1b55cd1d36c54786c7e974dc927d586730206509985dadf030",
+      "images": [
+        "assets/PMC12413892/cureus-0017-00000089557-i01.jpg",
+        "assets/PMC12413892/cureus-0017-00000089557-i02.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "b30e669960a50c85b4400f5da1d09cd64cbfaf0c855adb817526407dac08edd3",
+      "article_xml_sha256": "f1f27d0a58e3be62bb6dde8c28d21655228df5029a0068bb8c79841e0d07d3f0"
+    },
+    {
+      "id": "PMC8003149",
+      "question_sha256": "b7c78b91aec9fad44e3c9a17c8387d80beccb58a3d5e79446e5391416bbefcea",
+      "response_sha256": "60b7012c9dbc640cd853f5e4df15275911d5a443200ff3af2911e7c03902adf6",
+      "images": [
+        "assets/PMC8003149/ijerph-18-03159-g002.jpg",
+        "assets/PMC8003149/ijerph-18-03159-g004.jpg",
+        "assets/PMC8003149/ijerph-18-03159-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "4a858ffd34c1f75bc86af78bfc1df355f2ab9cca41b61ba3437f68a9901892ba",
+      "article_xml_sha256": "d9d1f15b11632b633ca7ea54b53980c10e8c2fb0198de04a9268035b1ba660bb"
+    },
+    {
+      "id": "PMC12478033",
+      "question_sha256": "884f374757b479f8d89ce435ce38dc622a33c4688c248689e5c9a3a026991208",
+      "response_sha256": "e58020d7169ccec59ccb30453d2f9fcced9c921c0659f0a6edb329d9ae10049e",
+      "images": [
+        "assets/PMC12478033/JFOS-43-2-02-f5.jpg",
+        "assets/PMC12478033/JFOS-43-2-02-f2.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "37bdf4b301a46688c8ef92a200b18f6892e87f5a6403d46982f55b2b3af0474f",
+      "article_xml_sha256": "d5738dc082698f3723192acfb8493aa0c43e0535d35d326553a2171880f14d23"
+    },
+    {
+      "id": "PMC6738723",
+      "question_sha256": "c161a04766b6d8642005aa87a7fb36646c05158d7689e7443f41727710ad11f0",
+      "response_sha256": "9607db65acc0e38957fb525cd9ee0abdce6693ae9c28ef9341e9bcd64189be72",
+      "images": [],
+      "english_images": [],
+      "article_metadata_sha256": "4016703094eff4d49cd6587eb55d63408dba9a856d1bd9076b79ab33b5bdf46c",
+      "article_xml_sha256": "aef5fc97d08f3698481e1a2b4adba188ec93b12e309c2aaa97eaeefd7bbc5aa8"
+    },
+    {
+      "id": "PMC8891407",
+      "question_sha256": "07547c976bd36b5096a4373104849ab247ca387c0f1058c4fd58d14672c5f64b",
+      "response_sha256": "2f30a8d989240c0cb540d83d9b9b65a7bfa91bc58a4c9d61f2e30f6f1bec7ddd",
+      "images": [
+        "assets/PMC8891407/40729_2022_409_Fig2_HTML.jpg",
+        "assets/PMC8891407/40729_2022_409_Fig1_HTML.jpg",
+        "assets/PMC8891407/40729_2022_409_Fig3_HTML.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "2fbd8087dbd79ab3f53501abca785929da413560e66ef0025fa6991e79d05f15",
+      "article_xml_sha256": "4dee92a75d2def89075ed8a55f1b6db37ee989de344424c7a8d14acdc48a1ae0"
+    },
+    {
+      "id": "PMC10642913",
+      "question_sha256": "a3d76a60fedacc1e1e8674993bbf0fdb2a40c435a57fd3e55e64227c5438d0e3",
+      "response_sha256": "98a6dfce1808149ca929b15e5fa1a3c4c6c010dd9ae50a5f11e941ce03fc7ea7",
+      "images": [
+        "assets/PMC10642913/cureus-0015-00000047030-i03.jpg",
+        "assets/PMC10642913/cureus-0015-00000047030-i01.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "15a06fd5333ddac8ef314dd9186673281061b2f575c8440ded72f23d0d009c85",
+      "article_xml_sha256": "df6f3d5fa8cebd399c092eb857214d4ce0b1cd4522aea777dd08662847d0dcd8"
+    },
+    {
+      "id": "PMC12011459",
+      "question_sha256": "a3d9084bbc645d53c1723746988ae9cc9f549867980e265b8786f5064f7e2437",
+      "response_sha256": "340c905cb07bba716f7a8c2fa5ae2bcb9f6c5ea8a27e526a40428f3dfd32ce96",
+      "images": [
+        "assets/PMC12011459/CRID2025-5741422.002.jpg",
+        "assets/PMC12011459/CRID2025-5741422.001.jpg",
+        "assets/PMC12011459/CRID2025-5741422.003.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "c644ea7453755b4eb908ca3096f8970d6d31037f1b97992f652bd76a856fd474",
+      "article_xml_sha256": "025a4782ee2e422d1b1098b33da742c4f6c1cbaf9cd331c0875d0fb3b5c72408"
+    },
+    {
+      "id": "PMC8983254",
+      "question_sha256": "c29d2ea4ef1c11714055044185494443dba71c23d82bb1ab0e5ef489db6cd832",
+      "response_sha256": "4a4a8f7ed54fecbc9219271cacb3595536bdc5a3490f7d1b93c8441feb686300",
+      "images": [
+        "assets/PMC8983254/CRID2022-3548370.002.jpg",
+        "assets/PMC8983254/CRID2022-3548370.001.jpg",
+        "assets/PMC8983254/CRID2022-3548370.003.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "f3027e35bf2a61fce7c0cfde34949a77b69be48a5e546ed15f399e7d9af299b3",
+      "article_xml_sha256": "4d9640254a756e2d8179a6128ac8f5fcc843ce982d8d8a85afd24465e8d9b5cd"
+    },
+    {
+      "id": "PMC12225767",
+      "question_sha256": "c4f1267a85a3bbcee368974a6cfe5473c41e3147f13c446e0f86681563da6b64",
+      "response_sha256": "1f1a14324edd1a0660f0a4cecc7dbf094343ebeba158bdb534270a21392fc3a3",
+      "images": [
+        "assets/PMC12225767/jced-17-06-e752-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "fa8ca0556c37896092aa997f374d8d5cd9d11b8ab3835ea8ab3f7247cff528d2",
+      "article_xml_sha256": "0ceaf02aeba04332704bb7f0a212656ae67aa6f545ff9a64dbc804e3fb16d6ae"
+    },
+    {
+      "id": "PMC12638139",
+      "question_sha256": "94343522b09b2e0aeb9f5357c39d1914093ee79741c38418ad4dcc1f5032ef9f",
+      "response_sha256": "651389dba187a33fdd01337193602526dd4d53785acfab8179cccb1884b09e38",
+      "images": [
+        "assets/PMC12638139/CRID2025-4904301.002.jpg",
+        "assets/PMC12638139/CRID2025-4904301.001.jpg",
+        "assets/PMC12638139/CRID2025-4904301.003.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "73390c5d0a9ad6e93652421c9d34ed081b167e95e3d95151ede0969e785b20a3",
+      "article_xml_sha256": "510ba4aa98cb7a5c6d550e7ee0ba352af9807a3f52df848e2258748727c22029"
+    },
+    {
+      "id": "PMC11864335",
+      "question_sha256": "3319c5bab4eeb4d075403dd22e02293b4eb5ec86d8e99004e62fc5f9ee43e795",
+      "response_sha256": "e0b8f644f84a5e0b976a69b1483b8cc06efe83ed2a5d7ed96f569e0db9624c4c",
+      "images": [
+        "assets/PMC11864335/JISP-28-484-g002.jpg",
+        "assets/PMC11864335/JISP-28-484-g003.jpg",
+        "assets/PMC11864335/JISP-28-484-g004.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "de8bcb1af98904a152e00d6ed787906a1f85a87153b5f06ba8f02a6f552f415b",
+      "article_xml_sha256": "49ab4db9972edef43ee945ba83a337cc174d111254633e1edfcfd05c7c1605e4"
+    },
+    {
+      "id": "PMC6969963",
+      "question_sha256": "ed6db8bc57fa11678fbfdf78d3300febb3c3d51841945741d4a3a3b8b699bc21",
+      "response_sha256": "fd89735fef670d9f7f50132b4fec7ff26611cab3a0dabb30c2ffd72e69a0148c",
+      "images": [
+        "assets/PMC6969963/jced-12-e93-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "46f6932896435fdc169a45715140bc662d286d670be68144ff615b3be19251a9",
+      "article_xml_sha256": "eca14879dbed653fe46a9866ac03d09073d6ef8e36d3392787f85195a8307854"
+    },
+    {
+      "id": "PMC12349912",
+      "question_sha256": "7d3795f68706b3ba7be8c8c56b87f32a0d7f83b36ba0914ec591cb4fc8cbe076",
+      "response_sha256": "f9c38ead2e2fcd20f733d2c5d083631690bcae491e16c996a81bcb0239c353c0",
+      "images": [
+        "assets/PMC12349912/cureus-0017-00000087924-i02.jpg",
+        "assets/PMC12349912/cureus-0017-00000087924-i01.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "e32dd59101a6001ae4bd7ba169b4ebb4c3e8402af52dd75ab3eeff8aa6a8ee43",
+      "article_xml_sha256": "6cdbb8c83cb37ecdf01fd2fa282f5381dbc70c74fea647022d41371016b62069"
+    },
+    {
+      "id": "PMC12840320",
+      "question_sha256": "c384d37246aaf51f2dedeb62f7fc7514be983492e65ecd44cb4407128e9809b1",
+      "response_sha256": "eaba2cb0d752c53fec646bbc4123dc349fdccb8b0d2512093dbeda7b4b38b9a3",
+      "images": [
+        "assets/PMC12840320/children-13-00011-g017.jpg",
+        "assets/PMC12840320/children-13-00011-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "489db8dd84b90f80dce871ce3a92181341bcef5854e4724e2c5621c5ab276a01",
+      "article_xml_sha256": "da18f4bf8665c3683ccf35792d0031a60327655e868305beb7975cd140318fb9"
+    },
+    {
+      "id": "PMC11178394",
+      "question_sha256": "20f6c2adc7ec27e71629982d1194ef82570756c8bbd2698426340ef9ec932af9",
+      "response_sha256": "8c681079a2f46cf053de6b8df548354e6d92ec2563dfe940da01bbea42896a0e",
+      "images": [
+        "assets/PMC11178394/CRID2024-6590778.001.jpg",
+        "assets/PMC11178394/CRID2024-6590778.002.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "889a4c7cf2f8aa44cc50d669535b8022fac43553b2349e873e14e09c8d8ef639",
+      "article_xml_sha256": "c5ce6ab561603bc7850cb96f31ffc1a0fbc89b0d928ce5020f0a583e7454b6a0"
+    },
+    {
+      "id": "PMC9126466",
+      "question_sha256": "91998803bdcb91b6f7af7925e4177d9f404dbed03d3c2c412fe0399dc4b5fbef",
+      "response_sha256": "fe5b90b0d4cfbf649d967a3e6740be836d8f577df1241f4ce6d0665cb393aa9d",
+      "images": [
+        "assets/PMC9126466/JMedLife-15-579-g004.jpg",
+        "assets/PMC9126466/JMedLife-15-579-g001.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "372d75f2f9d559d5e622d2f843e2f4ec5e4a2d54eee5ea05cce795cd62392a31",
+      "article_xml_sha256": "0da9af6f4b604e707710e6c7ae227d4151ca4ecc1b7e4de6a47aab523da6817e"
+    },
+    {
+      "id": "PMC11297549",
+      "question_sha256": "3960b17d054b083777db0875637695eafa5fa3c71780b916d782c00a0fa9ce4d",
+      "response_sha256": "bad83f944f44e94eacc1ad0c8fb8ba1e9a529deacda82b656ec21164f5868578",
+      "images": [],
+      "english_images": [],
+      "article_metadata_sha256": "efc8a99f6429741b5afc2473882797b9de05a0aab3dcd7013ba1e771a935c01f",
+      "article_xml_sha256": "20996e34d87fe92ab84947d2928789908159690ca9947d5170dcd56b6b019d15"
+    },
+    {
+      "id": "PMC6150708",
+      "question_sha256": "2fb3a5a4a2e3b4737cc689139f24c0fe958c5f2b1fe985500c46883dbeefaa9b",
+      "response_sha256": "2966516cb212acebabbdbb2f4bcc0fea94382857357eae96013d15615ac41f4b",
+      "images": [
+        "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf2.jpg",
+        "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf1.jpg",
+        "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf3.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "581a6d1581edabee0495b7f8d81c85a6648a6833b4dba34fa7999c47b3e627d2",
+      "article_xml_sha256": "bc84a061bd7d6786791387d3ec80ebd424bee53791b1ea06e3a189a980502aee"
+    },
+    {
+      "id": "PMC9241206",
+      "question_sha256": "5e33c356f1029c54cee77a3a759e7eee5155252f87056c86091c6c170d325b23",
+      "response_sha256": "1fed935dad03ec1f62d5ecb0dd82abc567ea81b508b61dc4ff616b7123ee161a",
+      "images": [
+        "assets/PMC9241206/12903_2022_2294_Fig3_HTML.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "ce74d17ec5a4e63e52b5010be7d9d5fe01de9311f04aa6bb93732cf10e6c6a1a",
+      "article_xml_sha256": "a5f5adef0195256a4bb140491f2ac736d8a84c3b1cbe943cf52574bed1b166b7"
+    },
+    {
+      "id": "PMC12815613",
+      "question_sha256": "39825338ab354d3b22e8e9d8ce355672f925b2bc8c0156b2c219bc19c007c99e",
+      "response_sha256": "a81367cc984c491d01ed77c3bf8758d1bdaf8e0ec0ab04e79b59fb1f30b5991e",
+      "images": [
+        "assets/PMC12815613/cureus-0017-00000099735-i02.jpg",
+        "assets/PMC12815613/cureus-0017-00000099735-i01.jpg",
+        "assets/PMC12815613/cureus-0017-00000099735-i03.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "91246ea613d2115d6f7752d23885c3216cbaa8acd1eaeb3ad0e155bbf1c691f5",
+      "article_xml_sha256": "0f54d09d6b7e7b25986cfc7e35345411e4fd617f1eee9541bb3a8a0febe70eea"
+    },
+    {
+      "id": "PMC12606825",
+      "question_sha256": "2e83e1b1d01c73ba6f0b3041a4a51b30d9fc47124d68786d68bc20741f296e71",
+      "response_sha256": "b8b8cba7a662988a8f1f997ef3a51384d6c2b85f55c9e77010da93a59e485c5e",
+      "images": [
+        "assets/PMC12606825/13256_2025_5613_Fig2_HTML.jpg",
+        "assets/PMC12606825/13256_2025_5613_Fig1_HTML.jpg"
+      ],
+      "english_images": [],
+      "article_metadata_sha256": "d6fc200c4789af9954ee1345a25eacb8bbac37471d7384863db9e43ecca2be74",
+      "article_xml_sha256": "f22b61abe35d0e3b2850f43db7bf548508519dee0e3224e723397644de0e29b3"
+    }
+  ]
+}

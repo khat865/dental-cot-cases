@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.runtime/
+*.zip
+*.tar.gz
+*_preview.png
+qa_report.json
