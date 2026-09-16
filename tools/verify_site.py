@@ -1,12 +1,14 @@
 """Bounded browser QA for the local 47-case static site (requires Edge + Playwright)."""
 import json
+import re
+import os
 from pathlib import Path
 
 from playwright.sync_api import expect, sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
-ENTRY = (ROOT / 'docs/index.html').as_uri()
-ARTIFACTS = ROOT / '.runtime/qa'
+ENTRY = os.environ.get('COT_SITE_URL', (ROOT / 'docs/index.html').as_uri())
+ARTIFACTS = ROOT / ('.runtime/qa_live_english' if os.environ.get('COT_SITE_URL') else '.runtime/qa_english')
 ARTIFACTS.mkdir(parents=True, exist_ok=True)
 
 
@@ -17,10 +19,12 @@ with sync_playwright() as p:
     context.on('page', lambda page: page.on('pageerror', lambda error: errors.append(str(error))))
     context.on('requestfailed', lambda request: failed_requests.append({'url': request.url, 'failure': request.failure}))
     page = context.new_page()
-    page.set_default_timeout(5000)
+    page.set_default_timeout(15000 if os.environ.get('COT_SITE_URL') else 5000)
     page.goto(ENTRY)
     data = page.evaluate('window.COT_DATA')
     cases = data['cases']
+    assert not re.search(r'[\u3400-\u9fff]', json.dumps(data, ensure_ascii=False)), 'Chinese characters remain in site data'
+    assert all(case['language'] == 'en' for case in cases)
     assert len(cases) == len({case['id'] for case in cases}) == 47
     assert sum(len(case['images']) for case in cases) == 95
     english_cases = [case for case in cases if case.get('english')]
@@ -36,12 +40,14 @@ with sync_playwright() as p:
         fragment = '#case=' + case['id'] + ('&version=english' if version == 'english' else '')
         page.evaluate('(fragment) => { location.hash = fragment; }', fragment)
         expect(page.locator('#pmcid')).to_have_text(case['id'])
-        expect(page.locator('#languagePill')).to_have_text('English example' if version == 'english' else 'Original · Chinese')
+        expect(page.locator('#languagePill')).to_have_text('Earlier English example' if version == 'english' else 'English')
         assert page.locator('#caseTitle').text_content() == case['title']
         current = case['english'] if version == 'english' else case
         rendered = page.evaluate('''() => Object.fromEntries(
             ['question','caption','think','answer'].map(key => [key,document.getElementById(key+'Text').textContent]))''')
         assert rendered == {key: current[key] for key in ('question', 'caption', 'think', 'answer')}, case['id']
+        assert not re.search(r'[\u3400-\u9fff]', page.locator('body').inner_text()), case['id']
+        assert all(page.locator('#'+key+'Text').get_attribute('lang') == 'en' for key in ('question','caption','think','answer'))
         image_refs = page.locator('#gallery img').evaluate_all('(els) => els.map(el => el.getAttribute("src"))')
         assert image_refs == [image['src'] for image in current['images']], (case['id'], version)
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), case['id']
@@ -77,11 +83,11 @@ with sync_playwright() as p:
         route(case)
         expect(page.locator('#versionSelect')).to_be_enabled()
         page.locator('#versionSelect').select_option('english')
-        expect(page.locator('#languagePill')).to_have_text('English example')
+        expect(page.locator('#languagePill')).to_have_text('Earlier English example')
         route(case, 'english')
         assert page.url.endswith('#case=' + case['id'] + '&version=english')
         page.reload()
-        expect(page.locator('#languagePill')).to_have_text('English example')
+        expect(page.locator('#languagePill')).to_have_text('Earlier English example')
         assert page.locator('#questionText').text_content() == case['english']['question']
     assert len([image for image in decoded if image['version'] == 'original']) == 95
     print('PASS: all 104 image references decode (96 assets), three English variants and reloadable deep links', flush=True)
@@ -165,7 +171,7 @@ with sync_playwright() as p:
     unexpected_failures = [request for request in failed_requests if 'ERR_ABORTED' not in request['failure']]
     assert not unexpected_failures, unexpected_failures
     result = {
-        'status': 'passed', 'browser': 'Microsoft Edge', 'entry': 'docs/index.html',
+        'status': 'passed', 'browser': 'Microsoft Edge', 'entry': ENTRY, 'displayLanguage': 'English', 'cjkCharacters': 0,
         'cases': 47, 'originalImageReferences': 95, 'englishVariants': 3,
         'englishImageReferences': 9, 'uniqueDecodedAssets': 96, 'textOnlyCases': 2,
         'exactTextViewsChecked': 100, 'viewports': [1440, 390], 'filterCounts': filter_counts,

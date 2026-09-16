@@ -1,6 +1,7 @@
 {
-  "version": "dental-cot-47-v2-diagnostic-time",
-  "builtAt": "2026-09-16T02:56:22.962500+00:00",
+  "version": "dental-cot-47-v2-diagnostic-time-english-v1",
+  "sourceVersion": "dental-cot-47-v2-diagnostic-time",
+  "builtAt": "2026-09-16T03:18:33.744999+00:00",
   "caseCount": 47,
   "primaryImageReferences": 95,
   "englishVariantCount": 3,
@@ -34,9 +35,26 @@
   ],
   "dataFile": {
     "name": "data.js",
-    "sha256": "d64f82c77b4f92c45cbcd222cf3c09587ed2ea6475d4ce4420a9cd6d04ff3099"
+    "sha256": "dcaa9e0f67715ef51d193415d990e671ef4c7afd6f9198ece3a2093ca8db8d25"
   },
-  "transformation": "Only whitelisted fields were packaged. Original questions, responses, section contents, and image bytes were preserved; no CoT was generated or translated.",
+  "translationFiles": [
+    {
+      "name": "batch_1_en.json",
+      "sha256": "658fe56865829dac40c9b8aca31c40cdd2d0232d2a3d0085cc97a138edb3609b",
+      "count": 16
+    },
+    {
+      "name": "batch_2_en.json",
+      "sha256": "df6f33479fc589bf822566c537e3bb2e2bd54289dcf3953821e37f8e13ca892c",
+      "count": 16
+    },
+    {
+      "name": "batch_3_en.json",
+      "sha256": "3a17df09daabf164e68e35230a8dd4aa5dd555cdfbe756929c473d40837509c4",
+      "count": 15
+    }
+  ],
+  "transformation": "All 47 source questions and model responses were translated into English for display. Existing English passages, evidence identifiers, numeric tokens, step order, and image bytes were preserved. The three earlier English samples remain unchanged. Translation is not an independent clinical adjudication.",
   "assets": [
     {
       "src": "assets/PMC10642913/cureus-0015-00000047030-i01.jpg",
@@ -716,6 +734,16 @@
       "id": "PMC13242668",
       "question_sha256": "6445a2c5e12d1869303474efc6d50eae50f202f339b29806ffdc1dfae6564338",
       "response_sha256": "c40189a69ea65333cc4d472159bd3d8cccbcd4732b12c5bf0df7cc9b1a9f1bb2",
+      "display_question_sha256": "95733e69af39dedc330bdf5a8f2e0142a18150f04d124f31f2cedb839bf430a7",
+      "display_response_sha256": "e04dc1b2e2b5d39d103fdbbb2fb4243a20b7734921582d32bf0af1902dce70ac",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC13242668/12903_2026_8711_Fig2_HTML.jpg",
         "assets/PMC13242668/12903_2026_8711_Fig1_HTML.jpg",
@@ -733,6 +761,16 @@
       "id": "PMC12839816",
       "question_sha256": "4a768d85aa7bc4739bae7ccb41ccde081184afd725646f0c9da51721e7518d1d",
       "response_sha256": "0eee8eefd3991c15a906ebdb6e881b40a4c8ab536f64c4a3d3d3ed32a68d5e1c",
+      "display_question_sha256": "0de433aa5b27ea614788b7b5873f46ee4d3d05f7e1a4e738064bedf27b5a85c4",
+      "display_response_sha256": "908fae6c6d55293c015ee9bd25a65e6fec710ceb1632265dd3511af53933086e",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12839816/dentistry-14-00027-g002.jpg",
         "assets/PMC12839816/dentistry-14-00027-g001.jpg",
@@ -750,6 +788,16 @@
       "id": "PMC12939999",
       "question_sha256": "22948543456f7939d4da30d17081bd63d0d907139fec347161706f7f21dfda0e",
       "response_sha256": "53ff6baa1e3a00952276edecd8677f7f87c5e68372c5137c5d9501bba0d1937c",
+      "display_question_sha256": "ac405c7a8efc4bb4c45950cadd22d7f81a6008edb39b32288e9a85f10ccabada",
+      "display_response_sha256": "7b76f7dfe394e9e5bbc9aa8eb64fd7c51942f4b62e819d684aa99c3d08f3f184",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12939999/dentistry-14-00104-g002.jpg",
         "assets/PMC12939999/dentistry-14-00104-g001.jpg"
@@ -766,6 +814,16 @@
       "id": "PMC13178942",
       "question_sha256": "8a82e8b13c61d4b6b59af0682c1d226a2a9e0cbcbea940a68bbe7c116b0746b4",
       "response_sha256": "21480ec692f937dd154479ba2ca8bd357f8ae6725cce7d1dd4ddddff04dbe82d",
+      "display_question_sha256": "5dbeb9df18d2a46dd69bf4ea0839d3df1f377cf8daf385c6aa455555712258ce",
+      "display_response_sha256": "304b0ba3f2dd91f5baadd8de05f4bea64c40d355baee74fd0611e70cbfdcd62f",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC13178942/cureus-0018-00000107107-i01.jpg"
       ],
@@ -777,6 +835,16 @@
       "id": "PMC13022747",
       "question_sha256": "0ca6ee752b128ef0159da8c730ee51decbb204a66eab85ddcecfcde8ec6d38aa",
       "response_sha256": "8876f3a525f1320fcb1dcc1bfa42165e35c50edf34bb96cc49d525c463c96f1c",
+      "display_question_sha256": "0041e8b5a04a25a5e73223f77a8f9e675220d489483fd2d0255ebcc888e1e130",
+      "display_response_sha256": "7816a96c28a2702d6fd7cee45eaf6bd9cdcb5f41c6edf7dd33da86d1b91ebdfc",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC13022747/SCD-46-0-g004.jpg"
       ],
@@ -788,6 +856,16 @@
       "id": "PMC12662774",
       "question_sha256": "d995cf3b3633787b23ba77b36f58960a078e31839e1a3a2106b742b5dcacbab5",
       "response_sha256": "66eeab2574aab51e6d4ef1bd05d9664676ddbc9a1f35da363e25f6d2e0b82ce8",
+      "display_question_sha256": "8c40a076ae31ede6de899090a2e58b8c51d0518f52391ca36020b41a4be87e53",
+      "display_response_sha256": "7a985e7347da25c95acecbb927b22a97b96f96ab219dccc7c2ca6223a5256880",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12662774/41415_2025_9010_Fig3_HTML.jpg",
         "assets/PMC12662774/41415_2025_9010_Fig1_HTML.jpg",
@@ -801,6 +879,16 @@
       "id": "PMC11988701",
       "question_sha256": "2550c679e2a5261d63de8c3544f9ea151ac5c2126fa5f5ec1977d85e2323162f",
       "response_sha256": "adb0a9b16c51299acc48e7f79f2057e9d69072005620ff24b72cbdd0eb515e40",
+      "display_question_sha256": "d20e591bd02592c470d3455def57ddcf83ec59235e260902531f423990fdadda",
+      "display_response_sha256": "1fc36a45df1086dc2ee5f82c1303f924ac4fe938b68ff02ae243694224cdcdc5",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC11988701/diagnostics-15-00938-g001.jpg"
       ],
@@ -812,6 +900,16 @@
       "id": "PMC9469393",
       "question_sha256": "860e3e24ccc6c8f2519267c4a608cd328b991a5ee2a8b18ebc34dbf3c80b4848",
       "response_sha256": "2bcd7e5634e71adc1c300eb4b6d240430046b4e38ccaedbf1723050a728b26a8",
+      "display_question_sha256": "e65c196896595a02a90835e3a9eaf0ed39dea6a4526ebb0953a83807762d352d",
+      "display_response_sha256": "a43f3fec718ea805bb99d402ba3c43e9517e8e8c24bf4bd146f3a81b0df16230",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC9469393/JPBS-14-1046-g001.jpg"
       ],
@@ -823,6 +921,16 @@
       "id": "PMC13262183",
       "question_sha256": "c1e7f10a9a5a44f44ae79ca08761d28b3bc8917a93ba8ad550236785ff23496f",
       "response_sha256": "aec081e8e8a190cfd78f131b28138f51932308ae0553bb7721877697f8c05796",
+      "display_question_sha256": "d104a94cf1f32b26775a7c76e23c55f9cd676053139f4b5cd69bf0351c66364b",
+      "display_response_sha256": "187afc32588b15ee0d6d8f6d30c30cd728a770781a2a69172a6fada4a9bc1a38",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC13262183/cureus-0018-00000108780-i01.jpg",
         "assets/PMC13262183/cureus-0018-00000108780-i02.jpg"
@@ -835,6 +943,16 @@
       "id": "PMC13179519",
       "question_sha256": "a56818fea11f1fbe99d1f09fb58f9aa444ee0f72bfdc1ed2ca935c38bb3f4cab",
       "response_sha256": "81c8710bc99cf05393e004e5cc65eac6ed2f2241be3ead704b3727bc2cad1475",
+      "display_question_sha256": "377537e396c91043a857dcb690e38a6649602908abc25573371b672c38862c0c",
+      "display_response_sha256": "390c079929cf22d2542ebd6061a02c7f57350fa035ee064a3158cd8494d39aa8",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC13179519/cureus-0018-00000107134-i01.jpg"
       ],
@@ -846,6 +964,16 @@
       "id": "PMC12964317",
       "question_sha256": "16f99ec088431c10676a4e2893a8b3e83f4f4730519e7e11527fd1280bcd0117",
       "response_sha256": "9f5a410f09766e393357a455beb440889a8384b938c9a9116e626d0e0b079772",
+      "display_question_sha256": "f9acb50633aa674317cd2c31bf0b76a5aeebe91af6678ca23c3fefd46cc04a11",
+      "display_response_sha256": "f5517d44ae2a1290204ef20abaa66cb82089a86346ef4425b5571c1fd7ebf6f2",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12964317/cureus-0018-00000102941-i02.jpg",
         "assets/PMC12964317/cureus-0018-00000102941-i01.jpg",
@@ -859,6 +987,16 @@
       "id": "PMC11929591",
       "question_sha256": "66e9c24ea7ad68a88c6eac151db3c7a2540dc788c865c56940c869951dbd271e",
       "response_sha256": "fb5736b7baeebdb56cadbd8f801443497dcd03e7b978a09b2ed29002bf4f927a",
+      "display_question_sha256": "600cb0513d1ae563de636fd36cfc831e95125e525657f17f7304825159aa5cf7",
+      "display_response_sha256": "5c7a044317f95fc770112121a12fe3db58e9aefcf8bde2d5b1e6de1c626b31ad",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC11929591/cureus-0017-00000079382-i02.jpg",
         "assets/PMC11929591/cureus-0017-00000079382-i03.jpg"
@@ -871,6 +1009,16 @@
       "id": "PMC12032624",
       "question_sha256": "78ff5c1ada597703cc75b1b031487bceccb6bae29e9c0e68567d1c4a1f107296",
       "response_sha256": "fc7a786c8f5e16ef445ac34bd3e0dbf087d832612e7f3633feefa93f448c726f",
+      "display_question_sha256": "4d61a693e3cc40db3b58086d3b8d3ac95468bcd2e24a0e7ad820c8e5d952dfa6",
+      "display_response_sha256": "f2faa14b48bbeee914c4debd87863b30d336d237b1b054f56918764b57361800",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12032624/cureus-0017-00000081272-i02.jpg",
         "assets/PMC12032624/cureus-0017-00000081272-i01.jpg"
@@ -883,6 +1031,16 @@
       "id": "PMC9756689",
       "question_sha256": "72faf383c98eb56a1793ba22874586ffd7b81c8ae95f50e9da1ecf757c477fda",
       "response_sha256": "ce39e51be555b6298126153aaff915cbd479e4cd87be2d6a145d49d4cd8065e2",
+      "display_question_sha256": "134a60353e58dc064a1575b0df3f2e0359f89ed55bd26254a11f7a56071e59aa",
+      "display_response_sha256": "a1bb031e14abdda827564459fbd500d6c2f6abd4629ef05e5c4e4829b6b78379",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC9756689/13256_2022_3703_Fig1_HTML.jpg",
         "assets/PMC9756689/13256_2022_3703_Fig3_HTML.jpg"
@@ -895,6 +1053,16 @@
       "id": "PMC9287005",
       "question_sha256": "9cd7f4ccffc5b72d7141ffafc1d26a11c93789e164212a1e8ae5a7e684fa9045",
       "response_sha256": "b9b7e596f1e182852bf831e9163e8a6f65e22ec89cb965974c7103539235ee3c",
+      "display_question_sha256": "5a637b8048126a29fe012d98268b0558ff6cb3f36f44fdf2c88fac9b83505fbf",
+      "display_response_sha256": "3d8524ac101e25bb0f411744779119c9bf8aa8d63efba8982f85b98bc5f8bc62",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC9287005/CRID2022-1976352.002.jpg",
         "assets/PMC9287005/CRID2022-1976352.001.jpg",
@@ -908,6 +1076,16 @@
       "id": "PMC12554343",
       "question_sha256": "85e6542822facd10f081b64cd92595eb510679af168d95b1087fb2083162a553",
       "response_sha256": "4d3c50eb17d29ca2c707caae579397794242f85b45d8b536d9ef58083c6e1bcf",
+      "display_question_sha256": "7a0c766e4254ae2a0862cd1f2342c071e185572c316c4ffd5c6a5f74ba11769d",
+      "display_response_sha256": "b3ca2cd69de0f3ef60a6f2fb4810509ba67c0d2b615d9b873d40aa2e62f57e9a",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12554343/cureus-0017-00000093225-i07.jpg",
         "assets/PMC12554343/cureus-0017-00000093225-i01.jpg",
@@ -921,6 +1099,16 @@
       "id": "PMC5012755",
       "question_sha256": "c8aea0576978f49f90dea2f01e618602724994f9a263f25e2ffedba9aee66672",
       "response_sha256": "029aedb1a80483fc2f1def4e0b497a72b399cb602e44ec3c1dd414b905fb28ab",
+      "display_question_sha256": "45e1f44acdaba2a6feed0460ec929e0066a9ca530b0cc24109eeff9a1c83e1f2",
+      "display_response_sha256": "9c171f4821c3e5a24e544dd993065dcbcbebf53a1c547a671809cc3413a2886d",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC5012755/PAMJ-24-106-g002.jpg",
         "assets/PMC5012755/PAMJ-24-106-g001.jpg"
@@ -933,6 +1121,16 @@
       "id": "PMC11880773",
       "question_sha256": "08a08dfe8dfe9cd5d8cfa076f95d9a3a5c8bfda931a9a740acee78fe52e5d827",
       "response_sha256": "9f90f83dfaf3c7d32c5f85ab18178e99c4ea5b8d767f5216dba93a05e4c8b29a",
+      "display_question_sha256": "fb80a32c3f0dff489d833da8f07a72d5fa063109fbb0bd5765703c078b0f3c22",
+      "display_response_sha256": "40ebcc24523f7424ee6c12118324c5869ef2a67bd4be09098fd5a395d7da9fde",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC11880773/MGG3-13-e70087-g004.jpg"
       ],
@@ -944,6 +1142,16 @@
       "id": "PMC11909402",
       "question_sha256": "eaa2c72107227da906eead28fac56a9b4e8777c47f98c19ac65338875e1ecae5",
       "response_sha256": "645580de12f7bbc8db20aa230d023d7c5230effa83a91fe17129e61cd04bf54c",
+      "display_question_sha256": "53a58e29b9b4a0e657a066451dfa46f9bb151b2dfced533bbb09ebd7df0bbb1f",
+      "display_response_sha256": "4710797aa8b3d80d8cb509cc2a6095ed1a55e95d1916772ad5ccb6e8c4d9309d",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC11909402/JDS-26-88-g002.jpg",
         "assets/PMC11909402/JDS-26-88-g003.jpg"
@@ -956,6 +1164,16 @@
       "id": "PMC12939484",
       "question_sha256": "b9bb506900c35bf6e4dc58b429ddb46e309e44372d071510d12af51952eb186f",
       "response_sha256": "876eb0aef5f32836367465cb6daedc7a1f4af375a97517c3cf89471b774de701",
+      "display_question_sha256": "f7635cb2390bcd4da7b45ec0e03cf9486c7c30a1ef6991640174282588987396",
+      "display_response_sha256": "b64f36c9720e69dfc2653b1223e8c32070c361c64bd7e54c7ee9cdf058482697",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12939484/dentistry-14-00129-g001.jpg",
         "assets/PMC12939484/dentistry-14-00129-g002.jpg"
@@ -968,6 +1186,16 @@
       "id": "PMC12397749",
       "question_sha256": "5dfeb1968c112ccb9f9f97ad1f9f9efadaf5533d23e0feb775b690cb0f74a6e1",
       "response_sha256": "a076ed1448ca6d681d4f352938de282480a7e2952d7e157d8e135ba9465f9aac",
+      "display_question_sha256": "7ff0068e69e81506ea2f8922266810efccefab960f4fb5e5a4b2720aaafc186b",
+      "display_response_sha256": "3c9e3841819fc1f3154c7e2c5f14b4401dbea28c69b8df376cc45d4e8f472deb",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12397749/cureus-0017-00000089098-i03.jpg",
         "assets/PMC12397749/cureus-0017-00000089098-i02.jpg",
@@ -981,6 +1209,16 @@
       "id": "PMC12263011",
       "question_sha256": "119f996693135c9e8c55e8c3343c20e554fc41b6aa93fba01f12f362ac02ba81",
       "response_sha256": "9f3efcf2e2158d4ed5a3c4c7f627d0317cdb8a1eab418d081bc2d582f4166fb1",
+      "display_question_sha256": "8958328dbb14141e9461c27d0817cb277a377f7556b5d61f219c8ba12d72f968",
+      "display_response_sha256": "91aaeb146c190d72340921ed1543e9c3520afaa8654ea35e54747236ce96451a",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12263011/medi-104-e43260-g001.jpg",
         "assets/PMC12263011/medi-104-e43260-g002.jpg"
@@ -993,6 +1231,16 @@
       "id": "PMC7714592",
       "question_sha256": "512260be6de858c05603472e7665f3387839dcf2fd2e64aed2a5431824433a82",
       "response_sha256": "26118a30b1bb3b2d960c3e660ae4883828a210d9179078f9655aba7aac24b47f",
+      "display_question_sha256": "376ae81b7ee956732ce17d58ff1f1362ed8805877f3dbc72a0a16178dd0f73e7",
+      "display_response_sha256": "57a8350bbc27ae28caf6ed7a376d8a797e64ba945ee1f3b635a5f9e7424288f7",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC7714592/CRID2020-8829305.001.jpg",
         "assets/PMC7714592/CRID2020-8829305.002.jpg"
@@ -1005,6 +1253,16 @@
       "id": "PMC12575408",
       "question_sha256": "644ae4147bdb41dab069717b268bcb6040c18473f991b5e3c200dcbff0f986e7",
       "response_sha256": "30ec7447a0e4c84c2825640b3fbbabcd2ab829c0fe25a3e189b8f03b7112942f",
+      "display_question_sha256": "04a169341bc5649aabcaeaef1f456731f6464e65d5198e3a211ca59846c4973c",
+      "display_response_sha256": "af80b7dd7eb8f0ccabcddb850f0eef6003f399834473a73baffe4149126bd27d",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12575408/cureus-0017-00000093603-i01.jpg"
       ],
@@ -1016,6 +1274,16 @@
       "id": "PMC4319327",
       "question_sha256": "e36372308d53827124e0100d05527c10a981f82edef3396e47b931d09ec390b5",
       "response_sha256": "e04081f2298bacea436e1b9ef55da2db381894297ebd937c4af838febdfb19e5",
+      "display_question_sha256": "1c607ececcdcb473657dd4ed7f1980f277fe0b8f151047fcd2ff63cedd69c1e8",
+      "display_response_sha256": "be5042567f24b211651a4ee8884b9e57ae552082183c526d50ab8f8576961fd2",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC4319327/CCD-6-110-g003.jpg",
         "assets/PMC4319327/CCD-6-110-g002.jpg",
@@ -1029,6 +1297,16 @@
       "id": "PMC13124219",
       "question_sha256": "43238fe3832ce5e006459e4df5f32db8fd26212c512d6c670fb6e88140ba35ad",
       "response_sha256": "4c89b0ce0dcc9ebaea26e5b99670db5cdf00f5d62d6362950a65835de34bb062",
+      "display_question_sha256": "c03325d9211337b6c8638aece3695a9b38fa1d0ae476c078e35d9ffe7c3c4da9",
+      "display_response_sha256": "2785150941e44fe40ad7943850bdf51bedd99a687c67b7d4e0e4e79c23061d2b",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC13124219/1678-7757-jaos-34-e20250499-gf02.jpg"
       ],
@@ -1040,6 +1318,16 @@
       "id": "PMC12413892",
       "question_sha256": "2a358c31f35a51408f351b4e340a837cb047efb7de404d82745587bc920eb072",
       "response_sha256": "b3531c8e22013d1b55cd1d36c54786c7e974dc927d586730206509985dadf030",
+      "display_question_sha256": "c62c65255f1981c0a46f17efcee17f426cea1d04a35be62beaa9e8afac514223",
+      "display_response_sha256": "d99d3a8916f53dd2c756305b841c8c075985fd771f2c0ae2850e8b7dcaa16479",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12413892/cureus-0017-00000089557-i01.jpg",
         "assets/PMC12413892/cureus-0017-00000089557-i02.jpg"
@@ -1052,6 +1340,16 @@
       "id": "PMC8003149",
       "question_sha256": "b7c78b91aec9fad44e3c9a17c8387d80beccb58a3d5e79446e5391416bbefcea",
       "response_sha256": "60b7012c9dbc640cd853f5e4df15275911d5a443200ff3af2911e7c03902adf6",
+      "display_question_sha256": "d7358be993650132df576201662dc3be628aeea20c263c66ed2c2f7670086695",
+      "display_response_sha256": "e7f90e1885a3aa387abe703735636b2fa8deea8969be2b5b72034582c2e783d8",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC8003149/ijerph-18-03159-g002.jpg",
         "assets/PMC8003149/ijerph-18-03159-g004.jpg",
@@ -1065,6 +1363,16 @@
       "id": "PMC12478033",
       "question_sha256": "884f374757b479f8d89ce435ce38dc622a33c4688c248689e5c9a3a026991208",
       "response_sha256": "e58020d7169ccec59ccb30453d2f9fcced9c921c0659f0a6edb329d9ae10049e",
+      "display_question_sha256": "a2b5eaa9957a6ad3a6233aaf0cdff889d479e19e3900cfc272aeb6c2de459abd",
+      "display_response_sha256": "58b7d42296aacbb51fbcd7bd48b576e7bca882395cc8ece28d0ae2267d2c01c5",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12478033/JFOS-43-2-02-f5.jpg",
         "assets/PMC12478033/JFOS-43-2-02-f2.jpg"
@@ -1077,6 +1385,16 @@
       "id": "PMC6738723",
       "question_sha256": "c161a04766b6d8642005aa87a7fb36646c05158d7689e7443f41727710ad11f0",
       "response_sha256": "9607db65acc0e38957fb525cd9ee0abdce6693ae9c28ef9341e9bcd64189be72",
+      "display_question_sha256": "9285dcd230cd213c45a11ca136f1a48d43d43ed850f1bb5a49998b18752f9c53",
+      "display_response_sha256": "5c93c3018c4894711723dd46274b9e88108cefe536feff7226ddc2a58426ce19",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [],
       "english_images": [],
       "article_metadata_sha256": "4016703094eff4d49cd6587eb55d63408dba9a856d1bd9076b79ab33b5bdf46c",
@@ -1086,6 +1404,16 @@
       "id": "PMC8891407",
       "question_sha256": "07547c976bd36b5096a4373104849ab247ca387c0f1058c4fd58d14672c5f64b",
       "response_sha256": "2f30a8d989240c0cb540d83d9b9b65a7bfa91bc58a4c9d61f2e30f6f1bec7ddd",
+      "display_question_sha256": "6a06776cfb0ffd67679659e00db404ccf1b2219c8dc3e29aeade7393acad8dcc",
+      "display_response_sha256": "023a0303a4b845ae37c705d9d7e67b9d3c809a0db0ff871911be045db318a2d8",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC8891407/40729_2022_409_Fig2_HTML.jpg",
         "assets/PMC8891407/40729_2022_409_Fig1_HTML.jpg",
@@ -1099,6 +1427,16 @@
       "id": "PMC10642913",
       "question_sha256": "a3d76a60fedacc1e1e8674993bbf0fdb2a40c435a57fd3e55e64227c5438d0e3",
       "response_sha256": "98a6dfce1808149ca929b15e5fa1a3c4c6c010dd9ae50a5f11e941ce03fc7ea7",
+      "display_question_sha256": "a4bb9f180c8ae01fd7e19c12fc0506f900a1cf22395a38755ba6bd77639ed00d",
+      "display_response_sha256": "c4eba2350be071ae1bad1c239609bf4b78215e56c1fb86d31bdece4cf43bffa9",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC10642913/cureus-0015-00000047030-i03.jpg",
         "assets/PMC10642913/cureus-0015-00000047030-i01.jpg"
@@ -1111,6 +1449,16 @@
       "id": "PMC12011459",
       "question_sha256": "a3d9084bbc645d53c1723746988ae9cc9f549867980e265b8786f5064f7e2437",
       "response_sha256": "340c905cb07bba716f7a8c2fa5ae2bcb9f6c5ea8a27e526a40428f3dfd32ce96",
+      "display_question_sha256": "3ab0f9714b4d52e8fb1141eb66cb7425c49cd27e3053801d1b663a1e7c86f1a4",
+      "display_response_sha256": "341c318c3562f06fc9a43a4d1621447fd45bec7742b58dc4040431652d39d952",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12011459/CRID2025-5741422.002.jpg",
         "assets/PMC12011459/CRID2025-5741422.001.jpg",
@@ -1124,6 +1472,16 @@
       "id": "PMC8983254",
       "question_sha256": "c29d2ea4ef1c11714055044185494443dba71c23d82bb1ab0e5ef489db6cd832",
       "response_sha256": "4a4a8f7ed54fecbc9219271cacb3595536bdc5a3490f7d1b93c8441feb686300",
+      "display_question_sha256": "a0c47fe7c8364bd5a3f87dca6d02887bb4f237f9bccc54022f62868acdf37319",
+      "display_response_sha256": "28a4f25fe1ed56639e15c3603fb93505609d5a424bc26fc59340c6caafaac73d",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC8983254/CRID2022-3548370.002.jpg",
         "assets/PMC8983254/CRID2022-3548370.001.jpg",
@@ -1137,6 +1495,16 @@
       "id": "PMC12225767",
       "question_sha256": "c4f1267a85a3bbcee368974a6cfe5473c41e3147f13c446e0f86681563da6b64",
       "response_sha256": "1f1a14324edd1a0660f0a4cecc7dbf094343ebeba158bdb534270a21392fc3a3",
+      "display_question_sha256": "76785eb555d102ee4a9ab4a83519aded21fec5c38b8f9b59705fdc96be80df58",
+      "display_response_sha256": "b689459b298b60758babb280eeb762c77028340f381649d55553734a6293ae66",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12225767/jced-17-06-e752-g001.jpg"
       ],
@@ -1148,6 +1516,16 @@
       "id": "PMC12638139",
       "question_sha256": "94343522b09b2e0aeb9f5357c39d1914093ee79741c38418ad4dcc1f5032ef9f",
       "response_sha256": "651389dba187a33fdd01337193602526dd4d53785acfab8179cccb1884b09e38",
+      "display_question_sha256": "5b51372be9d6f0a1c42814d985b11ae921adc580baec8ff51831e1ccdc399b11",
+      "display_response_sha256": "4e5cc47213a2a52d72fafbde57f10538f98a62a382fc87683f02130e1538c572",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12638139/CRID2025-4904301.002.jpg",
         "assets/PMC12638139/CRID2025-4904301.001.jpg",
@@ -1161,6 +1539,16 @@
       "id": "PMC11864335",
       "question_sha256": "3319c5bab4eeb4d075403dd22e02293b4eb5ec86d8e99004e62fc5f9ee43e795",
       "response_sha256": "e0b8f644f84a5e0b976a69b1483b8cc06efe83ed2a5d7ed96f569e0db9624c4c",
+      "display_question_sha256": "fe96f5d66d0283e0b2d15f3ac668b5aa274c1150249216a2cb6b111f8c590ba0",
+      "display_response_sha256": "65e76b421e7bca7a1278b0f8ece862069f546b53efa395b75189ab2d2148dc1d",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC11864335/JISP-28-484-g002.jpg",
         "assets/PMC11864335/JISP-28-484-g003.jpg",
@@ -1174,6 +1562,16 @@
       "id": "PMC6969963",
       "question_sha256": "ed6db8bc57fa11678fbfdf78d3300febb3c3d51841945741d4a3a3b8b699bc21",
       "response_sha256": "fd89735fef670d9f7f50132b4fec7ff26611cab3a0dabb30c2ffd72e69a0148c",
+      "display_question_sha256": "5d3359bbde38dc11a9341ae14e983dc815ed356b1cedf8e18597bd9f918f572e",
+      "display_response_sha256": "bfdbbab67868df4bc344b5a80563cba25fad43350a124bbe16ec8eb8f045349e",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC6969963/jced-12-e93-g001.jpg"
       ],
@@ -1185,6 +1583,16 @@
       "id": "PMC12349912",
       "question_sha256": "7d3795f68706b3ba7be8c8c56b87f32a0d7f83b36ba0914ec591cb4fc8cbe076",
       "response_sha256": "f9c38ead2e2fcd20f733d2c5d083631690bcae491e16c996a81bcb0239c353c0",
+      "display_question_sha256": "f605fa673b0a8100050196d0f28810e2ef44ec82656c770c9e98aed9499af1cf",
+      "display_response_sha256": "8f1a479262529ab2b45e258e76f812cddf5badf010f469902247f81bfdd7325b",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12349912/cureus-0017-00000087924-i02.jpg",
         "assets/PMC12349912/cureus-0017-00000087924-i01.jpg"
@@ -1197,6 +1605,16 @@
       "id": "PMC12840320",
       "question_sha256": "c384d37246aaf51f2dedeb62f7fc7514be983492e65ecd44cb4407128e9809b1",
       "response_sha256": "eaba2cb0d752c53fec646bbc4123dc349fdccb8b0d2512093dbeda7b4b38b9a3",
+      "display_question_sha256": "6867b6036ead47346b7d4b6ce82d2d631c7a5465ff92a9cc6acbf777d9414616",
+      "display_response_sha256": "7b7a1d5ccc3c6d35ddacaed1dfbfb387ee3fc6bad4c58aeb0fed1369cff031fb",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12840320/children-13-00011-g017.jpg",
         "assets/PMC12840320/children-13-00011-g001.jpg"
@@ -1209,6 +1627,16 @@
       "id": "PMC11178394",
       "question_sha256": "20f6c2adc7ec27e71629982d1194ef82570756c8bbd2698426340ef9ec932af9",
       "response_sha256": "8c681079a2f46cf053de6b8df548354e6d92ec2563dfe940da01bbea42896a0e",
+      "display_question_sha256": "e1009da380d951c564b75f7c02580fbbf3891261bfe753d9dee22b126bf500f2",
+      "display_response_sha256": "f08de7c5bd17f54c01e70bdce66967bc216cbdcdc43c77a705a39d6bde706c50",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC11178394/CRID2024-6590778.001.jpg",
         "assets/PMC11178394/CRID2024-6590778.002.jpg"
@@ -1221,6 +1649,16 @@
       "id": "PMC9126466",
       "question_sha256": "91998803bdcb91b6f7af7925e4177d9f404dbed03d3c2c412fe0399dc4b5fbef",
       "response_sha256": "fe5b90b0d4cfbf649d967a3e6740be836d8f577df1241f4ce6d0665cb393aa9d",
+      "display_question_sha256": "ae05d89ab9b119819df80eca269dd2d0dd1a07e9f8753ce44faccab86f636813",
+      "display_response_sha256": "7c0af7a762cf8beab3c2da0d9231635766ea9bf060f2eba201d474a7f26a95f1",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC9126466/JMedLife-15-579-g004.jpg",
         "assets/PMC9126466/JMedLife-15-579-g001.jpg"
@@ -1233,6 +1671,16 @@
       "id": "PMC11297549",
       "question_sha256": "3960b17d054b083777db0875637695eafa5fa3c71780b916d782c00a0fa9ce4d",
       "response_sha256": "bad83f944f44e94eacc1ad0c8fb8ba1e9a529deacda82b656ec21164f5868578",
+      "display_question_sha256": "296df33d16bdd2c1a52719317a2ddf75e8469e82c077ff41e643e880e2604c66",
+      "display_response_sha256": "57e3f87cc51ed3cc66d186ef39a89d16058728089f815c8ac026e997023095a3",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [],
       "english_images": [],
       "article_metadata_sha256": "efc8a99f6429741b5afc2473882797b9de05a0aab3dcd7013ba1e771a935c01f",
@@ -1242,6 +1690,16 @@
       "id": "PMC6150708",
       "question_sha256": "2fb3a5a4a2e3b4737cc689139f24c0fe958c5f2b1fe985500c46883dbeefaa9b",
       "response_sha256": "2966516cb212acebabbdbb2f4bcc0fea94382857357eae96013d15615ac41f4b",
+      "display_question_sha256": "dcff5b597c1f1d80e08cdc476b8fd959ecbd0c5afb6ffecf2799770c4f2af36d",
+      "display_response_sha256": "e2695341ac6f011b2aae839298cf1dd48a2ebd67de572337b4ce9a8f974f0565",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf2.jpg",
         "assets/PMC6150708/2176-9451-dpjo-23-04-00055-gf1.jpg",
@@ -1255,6 +1713,16 @@
       "id": "PMC9241206",
       "question_sha256": "5e33c356f1029c54cee77a3a759e7eee5155252f87056c86091c6c170d325b23",
       "response_sha256": "1fed935dad03ec1f62d5ecb0dd82abc567ea81b508b61dc4ff616b7123ee161a",
+      "display_question_sha256": "f4a5eb2f805efba0239a74da3d1ac5c0b5c2d48c6b3d18049caf7de5205f9f72",
+      "display_response_sha256": "7470f3846ec381da976ad8073116db256d2edfb9276381a5c7cd7b12e004a976",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC9241206/12903_2022_2294_Fig3_HTML.jpg"
       ],
@@ -1266,6 +1734,16 @@
       "id": "PMC12815613",
       "question_sha256": "39825338ab354d3b22e8e9d8ce355672f925b2bc8c0156b2c219bc19c007c99e",
       "response_sha256": "a81367cc984c491d01ed77c3bf8758d1bdaf8e0ec0ab04e79b59fb1f30b5991e",
+      "display_question_sha256": "77437fb1992c4ca82276e7a30b858d38b4360ce4085a26d90264e835c5067884",
+      "display_response_sha256": "e3491a15df1231b1c960cc3c3c004b24f3ab0196956c6f82278ae58d8a8a7881",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12815613/cureus-0017-00000099735-i02.jpg",
         "assets/PMC12815613/cureus-0017-00000099735-i01.jpg",
@@ -1279,6 +1757,16 @@
       "id": "PMC12606825",
       "question_sha256": "2e83e1b1d01c73ba6f0b3041a4a51b30d9fc47124d68786d68bc20741f296e71",
       "response_sha256": "b8b8cba7a662988a8f1f997ef3a51384d6c2b85f55c9e77010da93a59e485c5e",
+      "display_question_sha256": "c4b97f0c7e59f57a07fde2be4e5b8f4a26d3329beb85d5e4dd3221312e22c998",
+      "display_response_sha256": "cfc6cd6a9fc5919a29f62fcbc97d953a027bb50509cd05a6208f7c8683d68878",
+      "translation_checks": [
+        "no CJK characters",
+        "numeric tokens preserved",
+        "evidence identifiers preserved",
+        "image markers preserved",
+        "numbered step order preserved",
+        "existing English lines preserved"
+      ],
       "images": [
         "assets/PMC12606825/13256_2025_5613_Fig2_HTML.jpg",
         "assets/PMC12606825/13256_2025_5613_Fig1_HTML.jpg"

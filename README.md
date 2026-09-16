@@ -1,6 +1,6 @@
 # FineDent Dental Case Library
 
-A static website displaying all **47 dental diagnostic cases** from the diagnostic-time v2 dataset, with source images, questions, and model-generated Caption / Think / Answer content.
+A static website displaying all **47 dental diagnostic cases in English**, with source images, questions, and model-generated Caption / Think / Answer content from the diagnostic-time v2 dataset.
 
 - 47 original cases; 95 diagnostic-time image references.
 - Two intentionally text-only cases remain in the directory.
@@ -8,7 +8,7 @@ A static website displaying all **47 dental diagnostic cases** from the diagnost
 - 96 unique image files, including the additional image used only in an earlier English example.
 - Search by title, diagnosis, or PMC ID; filter by image modality; use direct case links, image enlargement, presentation mode, and printing.
 
-The complete source dataset contains Chinese reasoning. The English examples are separate earlier rewrites. No new diagnostic text or translations were generated for this website. The application hides leading image placeholder tokens visually; the underlying original model input remains preserved in the data.
+All 47 source questions, captions, reasoning sections, and answers have been translated into English for display. Existing English passages, patient details, measurements, tooth references, evidence identifiers, diagnostic scope, and uncertainty are retained. Three separate earlier English examples remain available with their matching images. The application hides leading image placeholder tokens visually while preserving them in the translated model input.
 
 ## Run locally
 
@@ -26,4 +26,4 @@ Publish from the `main` branch and the `/docs` folder. No build service, API key
 
 `docs/data_manifest.json` records the dataset version, source hashes, image hashes, case identifiers, and provenance. Each case includes its original article link, author credits, and recorded license. Images are copied without alteration and retain the licenses of their original publications. Do not assume a blanket license applies to the entire collection.
 
-`tools/build_data.py` reproduces the website data from the local source artifacts. Original user prompts and model responses are preserved. These are model-generated research examples, not independently adjudicated diagnoses.
+`tools/build_data.py` reproduces the website data from the local source artifacts and the three files in `translations/`. The build requires all 47 translations, rejects Chinese characters, and checks numeric tokens, evidence identifiers, image markers, numbered step order, and pre-existing English lines. Source and translated text hashes remain in the provenance manifest. These mechanical checks and translations are not independent clinical adjudications.

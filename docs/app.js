@@ -17,7 +17,7 @@ function updateHash(){const next=hashFor(selected.id,version);if(location.hash!=
 function restoreHash(){const q=new URLSearchParams(location.hash.slice(1));const id=q.get('case');if(id&&byId.has(id)){selected=byId.get(id);version=q.get('version')==='english'&&selected.english?'english':'original';if(!filtered.includes(selected)){$('searchInput').value='';$('filterSelect').value='all';filtered=cases.slice();}render();}else if(!id){render();}}
 function renderList(){
   $('resultCount').textContent=filtered.length;
-  $('caseList').innerHTML=filtered.map(c=>'<a class="case-item '+(c.id===selected.id?'selected':'')+'" href="'+hashFor(c.id)+'" data-case="'+esc(c.id)+'" '+(c.id===selected.id?'aria-current="page"':'')+'><span class="list-number">'+String(cases.indexOf(c)+1).padStart(2,'0')+'</span><div><h3>'+esc(c.title)+'</h3><div class="list-meta"><span>'+esc(c.id)+'</span><span>'+c.images.length+' image'+(c.images.length===1?'':'s')+'</span>'+(hasEnglish(c)?'<span class="english-dot">EN</span>':'')+'</div></div></a>').join('');
+  $('caseList').innerHTML=filtered.map(c=>'<a class="case-item '+(c.id===selected.id?'selected':'')+'" href="'+hashFor(c.id)+'" data-case="'+esc(c.id)+'" '+(c.id===selected.id?'aria-current="page"':'')+'><span class="list-number">'+String(cases.indexOf(c)+1).padStart(2,'0')+'</span><div><h3>'+esc(c.title)+'</h3><div class="list-meta"><span>'+esc(c.id)+'</span><span>'+c.images.length+' image'+(c.images.length===1?'':'s')+'</span>'+(hasEnglish(c)?'<span class="english-dot" title="Earlier English example also available">ALT</span>':'')+'</div></div></a>').join('');
   document.querySelectorAll('[data-case]').forEach(a=>a.onclick=e=>{e.preventDefault();selected=byId.get(a.dataset.case);version='original';updateHash();render();scrollToCase();});
 }
 function scrollToCase(){if(innerWidth<850)$('caseMain').scrollIntoView({behavior:'smooth',block:'start'});else window.scrollTo({top:Math.max(0,document.querySelector('.workspace').offsetTop-20),behavior:'smooth'});}
@@ -29,16 +29,16 @@ function render(){
   $('caseNumber').textContent='CASE '+String(cases.indexOf(selected)+1).padStart(2,'0');$('position').textContent=(index+1)+' / '+filtered.length;
   $('prevCase').disabled=index<=0;$('nextCase').disabled=index>=filtered.length-1;
   $('pmcid').textContent=selected.id;$('caseTitle').textContent=selected.title;
-  $('languagePill').textContent=version==='english'?'English example':'Original · Chinese';
+  $('languagePill').textContent=version==='english'?'Earlier English example':'English';
   $('sourceLink').href=/^https?:\/\//.test(selected.sourceUrl||'')?selected.sourceUrl:'https://pmc.ncbi.nlm.nih.gov/articles/'+encodeURIComponent(selected.id)+'/';
   $('licenseLabel').textContent='License: '+(selected.license||'See original article').toUpperCase();
   $('versionSelect').options[1].disabled=!hasEnglish(selected);$('versionSelect').value=version;$('versionSelect').disabled=!hasEnglish(selected);
-  $('versionNote').textContent=version==='english'?'Earlier English rewrite with its original image set.':'Diagnostic-time dataset v2 · Original text preserved.';
+  $('versionNote').textContent=version==='english'?'Earlier English rewrite with its original image set.':'Diagnostic-time dataset v2 · English translation.';
   const images=current.images||[];$('caseImageCount').textContent=images.length+' image'+(images.length===1?'':'s');
   $('gallery').innerHTML=images.length?images.map((im,i)=>'<figure class="image-card"><button class="image-open" data-image="'+i+'" aria-label="Enlarge '+esc(modality(im))+' '+(i+1)+'"><img src="'+esc(im.src)+'" alt="'+esc(modality(im)+' — '+selected.id+' — '+im.name)+'" loading="eager"></button><figcaption>'+String(i+1).padStart(2,'0')+' / '+esc(modality(im))+'</figcaption>'+(im.caption?'<details><summary>Original figure caption</summary><p>'+esc(im.caption)+'</p></details>':'')+'</figure>').join(''):'<div class="empty-images">'+icon('image')+'No retained diagnostic-time images in this dataset version.</div>';
   document.querySelectorAll('[data-image]').forEach(b=>b.onclick=()=>openImage(+b.dataset.image));
   $('imageNote').textContent=images.length?'Click an image to enlarge it. Images are reproduced from the source article without alteration.':'This text-only case is included in the complete 47-case collection.';
-  for(const key of ['question','caption','think','answer']){const el=$(key+'Text');el.textContent=current[key]||'This section is not present in the source sample.';el.lang=version==='english'?'en':'zh';}
+  for(const key of ['question','caption','think','answer']){const el=$(key+'Text');el.textContent=current[key]||'This section is not present in the source sample.';el.lang='en';}
   const markerPrefix=(current.question||'').match(/^(?:<image>\s*)+/);
   if(markerPrefix){const hidden=document.createElement('span');hidden.hidden=true;hidden.textContent=markerPrefix[0];$('questionText').replaceChildren(hidden,document.createTextNode(current.question.slice(markerPrefix[0].length)));}
   const authors=Array.isArray(selected.authors)?selected.authors.join(', '):selected.authors;

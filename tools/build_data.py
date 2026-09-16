@@ -1,4 +1,4 @@
-"""Package the existing 47 CoT cases and earlier English examples without rewriting.
+"""Package all 47 cases with audited English translations and original images.
 
 The public output is a whitelisted projection of source records. Local source
 paths are used only while building and are never written into public artifacts.
@@ -22,6 +22,9 @@ from PIL import Image
 
 
 VERSION = "dental-cot-47-v2-diagnostic-time"
+DISPLAY_VERSION = VERSION + "-english-v1"
+TEXT_FIELDS = ("question", "caption", "think", "answer")
+CJK = re.compile(r"[\u3400-\u9fff]")
 DEFAULT_ROOT = Path(r"E:\study\dental\case_report_crawler")
 PIPELINE = Path("audit_cache/final_pipeline_20260826_0001")
 TRAINING = Path("training/qwen3_vl_cot_47_v1")
@@ -54,6 +57,63 @@ def sections(response: str) -> dict[str, str]:
     if not (ends[0][1] <= ends[1][0] and ends[1][1] <= ends[2][0]):
         raise ValueError("Response sections are out of order")
     return result
+
+
+def load_translations(directory: Path, expected_ids: set[str]) -> tuple[dict, list[dict]]:
+    translations = {}
+    files = []
+    for path in sorted(directory.glob("batch_*_en.json")):
+        rows = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(rows, list):
+            raise ValueError(f"Translation file must contain a list: {path.name}")
+        files.append({"name": path.name, "sha256": sha256(path.read_bytes()), "count": len(rows)})
+        for row in rows:
+            case_id = row["id"]
+            if case_id in translations:
+                raise ValueError(f"Duplicate translation: {case_id}")
+            if any(not isinstance(row.get(field), str) or not row[field].strip() for field in TEXT_FIELDS):
+                raise ValueError(f"Incomplete translation: {case_id}")
+            if any(CJK.search(row[field]) for field in TEXT_FIELDS):
+                raise ValueError(f"Chinese text remains in the translation: {case_id}")
+            translations[case_id] = row
+    if set(translations) != expected_ids:
+        raise ValueError(f"Translations must cover exactly the 47 source cases; missing={sorted(expected_ids-set(translations))}, extra={sorted(set(translations)-expected_ids)}")
+    return translations, files
+
+
+def apply_translation(case: dict, translated: dict) -> dict:
+    """Enforce mechanical invariants; this is not a clinical adjudication."""
+    case_id = case["id"]
+    for field in TEXT_FIELDS:
+        original, target = case[field], translated[field]
+        for label, pattern in [
+            ("numeric tokens", r"\d+(?:\.\d+)?"),
+            ("evidence identifiers", r"\bE\d+\b"),
+            ("image markers", r"<image>"),
+        ]:
+            if Counter(re.findall(pattern, original)) != Counter(re.findall(pattern, target)):
+                raise ValueError(f"Translation changed {label}: {case_id}/{field}")
+        if re.findall(r"(?m)^\s*(\d+)\.", original) != re.findall(r"(?m)^\s*(\d+)\.", target):
+            raise ValueError(f"Translation changed numbered step order: {case_id}/{field}")
+        for line in original.splitlines():
+            line = line.strip()
+            if line and not CJK.search(line) and re.search(r"[A-Za-z]{3}", line) and line not in target:
+                raise ValueError(f"Existing English line was altered: {case_id}/{field}: {line[:100]}")
+    original_response_hash = sha256(case["rawResponse"].encode("utf-8"))
+    original_question_hash = sha256(case["question"].encode("utf-8"))
+    for field in TEXT_FIELDS:
+        case[field] = translated[field]
+    case["rawResponse"] = "\n\n".join(f"<{tag}>{case[tag.lower()]}</{tag}>" for tag in ("Caption", "Think", "Answer"))
+    case["language"] = "en"
+    case["translation"] = {
+        "sourceLanguage": "zh", "displayLanguage": "en", "version": DISPLAY_VERSION,
+        "sourceQuestionSha256": original_question_hash, "sourceResponseSha256": original_response_hash,
+    }
+    return {
+        "display_question_sha256": sha256(case["question"].encode("utf-8")),
+        "display_response_sha256": sha256(case["rawResponse"].encode("utf-8")),
+        "translation_checks": ["no CJK characters", "numeric tokens preserved", "evidence identifiers preserved", "image markers preserved", "numbered step order preserved", "existing English lines preserved"],
+    }
 
 
 def node_text(node: ET.Element | None) -> str:
@@ -116,6 +176,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-root", type=Path, default=DEFAULT_ROOT)
     parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1] / "docs")
+    parser.add_argument("--translations", type=Path, default=Path(__file__).resolve().parents[1] / "translations")
     args = parser.parse_args()
     source_root = args.source_root.resolve()
     output = args.output.resolve()
@@ -135,6 +196,7 @@ def main() -> None:
         raise ValueError("The original sources must contain the same 47 unique cases")
     if len(english) != 3 or not set(english).issubset(sample_ids):
         raise ValueError("Expected exactly three earlier English variants within the 47 cases")
+    translations, translation_files = load_translations(args.translations, sample_ids)
 
     assets = {}
 
@@ -194,10 +256,12 @@ def main() -> None:
                 "language": "en", "label": "Earlier English sample",
                 "version": "qwen_cot_english_gold_samples_v1",
             }
+        translation_audit = apply_translation(case, translations[case_id])
         cases.append(case)
         record_manifest.append({
             "id": case_id, "question_sha256": sha256(question.encode("utf-8")),
             "response_sha256": sha256(response.encode("utf-8")),
+            **translation_audit,
             "images": [item["src"] for item in images],
             "english_images": [item["src"] for item in case["english"]["images"]] if case["english"] else [],
             "article_metadata_sha256": sha256((article_dir / "metadata.json").read_bytes()),
@@ -209,26 +273,29 @@ def main() -> None:
     if image_count != 95 or set(text_only_ids) != {"PMC6738723", "PMC11297549"}:
         raise ValueError("Unexpected image counts or text-only cases")
     payload = {
-        "version": VERSION, "cases": cases, "caseCount": len(cases), "imageCount": image_count,
+        "version": DISPLAY_VERSION, "sourceVersion": VERSION, "cases": cases, "caseCount": len(cases), "imageCount": image_count,
         "assetCount": len(assets), "englishVariantCount": len(english),
         "englishImageCount": sum(len(case["english"]["images"]) for case in cases if case["english"]),
         "textOnlyCount": len(text_only_ids), "textOnlyIds": text_only_ids,
         "categoryCounts": dict(sorted(Counter(case["category"] for case in cases).items())),
         "licenseCounts": dict(sorted(Counter(case["license"] for case in cases).items())),
-        "languageNote": "The 47 original source samples retain their Chinese text. Three separately identified earlier English samples are also available, with their original image sets.",
+        "languageNote": "All 47 cases are presented in English translation. Three separately identified earlier English samples are also available, with their own original image sets.",
     }
     data_js = "window.COT_DATA = " + json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + ";\n"
     if re.search(r"(?<![A-Za-z])[A-Za-z]:[\\/]|/fsx/homes/|@mbzuai|source_path|local_path|server_path", data_js):
         raise ValueError("A private source path or server identifier reached the public data")
+    if CJK.search(data_js):
+        raise ValueError("Chinese characters remain in the public case data")
     (output / "data.js").write_text(data_js, encoding="utf-8", newline="\n")
     public_manifest = {
-        "version": VERSION, "builtAt": datetime.now(timezone.utc).isoformat(),
+        "version": DISPLAY_VERSION, "sourceVersion": VERSION, "builtAt": datetime.now(timezone.utc).isoformat(),
         "caseCount": len(cases), "primaryImageReferences": image_count,
         "englishVariantCount": len(english), "englishImageReferences": payload["englishImageCount"],
         "uniqueAssetCount": len(assets), "textOnlyIds": text_only_ids,
         "sourceFiles": [{"role": role, "name": path.name, "sha256": sha256(path.read_bytes())} for role, path in source_files.items()],
         "dataFile": {"name": "data.js", "sha256": sha256((output / "data.js").read_bytes())},
-        "transformation": "Only whitelisted fields were packaged. Original questions, responses, section contents, and image bytes were preserved; no CoT was generated or translated.",
+        "translationFiles": translation_files,
+        "transformation": "All 47 source questions and model responses were translated into English for display. Existing English passages, evidence identifiers, numeric tokens, step order, and image bytes were preserved. The three earlier English samples remain unchanged. Translation is not an independent clinical adjudication.",
         "assets": [assets[key] for key in sorted(assets)], "cases": record_manifest,
     }
     (output / "data_manifest.json").write_text(json.dumps(public_manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
